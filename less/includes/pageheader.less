@@ -1,0 +1,95 @@
+.pageheader {
+    .minilogo {
+        height: 24px;
+        margin-right: @margin*2;
+    }
+}
+.pageheader .navbar {
+    padding-left: (@margin*3);
+    color:white;
+    background-color: @clr-primary8;
+    @media screen and (max-width: @breakpoint2) {
+        padding: 0;
+    }
+}
+.navtoggle {
+    padding: @margin*2;
+    display: none;
+    @media screen and (max-width: @breakpoint3) {
+        display: block;
+        position: absolute;
+        right:0;
+        top:0;
+    }
+}
+.sitettl {
+    font-family: @fnt-headings;
+    display: inline-block;
+    font-weight: 400;
+    @media screen and (max-width: @breakpoint2) {
+        padding-top:@margin*2;
+        text-align: center;
+        display: block;
+    }
+    @media screen and (max-width: @breakpoint3) {
+        padding-bottom:@margin*2;
+    }
+}
+.quicknav {
+    display: inline-block;
+    padding-left: @margin*3;
+    a {
+        padding-top: @margin*2;
+        padding-bottom: @margin*2;
+        display: inline-block;
+        box-sizing: border-box;
+        //color:white;
+        margin-left: @margin;
+        margin-right: @margin;
+        transition: color 0.2s;
+        &:hover {
+            color: white;
+        }
+        &.selected {
+            color: white;
+            padding-bottom: (@margin*2) - 5px;
+            border-bottom: solid 5px white;
+        }
+    }
+
+    @media screen and (max-width: @breakpoint2) {
+        display: flex;
+        clear: left;
+        padding: 0;
+        justify-content: space-between;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    @media screen and (max-width: @breakpoint3) {
+        position: relative;
+        height:0;
+        //visibility: hidden;
+        overflow: hidden;
+        left:0;
+        display: block;
+        transition: height 0.3s;
+        &.quicknav-opened {
+            padding-bottom: @margin;
+        }
+        a {
+            margin-left: 0;
+            margin-right: 0;
+            border-top:1px solid @clr-primary5;
+            display: block;
+            padding-top:0;
+            padding: @margin;
+            &.selected, &:hover {
+                color: white;
+                padding-bottom: @margin;
+                background-color: @clr-primary5;
+            }
+        }
+    }
+}

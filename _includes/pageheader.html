@@ -1,11 +1,18 @@
 <header class="pageheader">
-    <h1>Fri3d Camp Programma</h1>
-    <nav class="programnav">
-        <a href="#">Kalender</a>
-        <a href="#">Lijst</a>
-        <a href="#">Tags</a>
-        <a href="#">Mijn Programma</a>
-    </nav>
-    <nav class="breadcrumb"><a href"/">Fri3d Camp</a> &gt; <a href"#">Programma</a> &gt; {{ page.title }}</nav>
+    <div class="navbar">
+        <span class="sitettl"><img class="minilogo" src="/img/minibrand.svg" alt="Fri3d Camp"><span class="visuallyhidden">Fri3d Camp </span>Programma</span>
+        <nav class="quicknav">
+            <div class="navitems">
+                <a href="#">Kalender</a>
+                <a href="#">Lijst</a>
+                <a href="#">Tags</a>
+                <a href="#">Mijn Programma</a>
+            </div>
+        </nav>
+        <a href="#" class="navtoggle">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+    <nav class="breadcrumb"><i class="material-icons">home</i> <a href"/">Fri3d Camp 2018</a> &gt; <a href"#">Programma</a> &gt; {{ page.title }}</nav>
 </header>
 <div class="pagewrapper">
