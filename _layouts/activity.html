@@ -1,0 +1,73 @@
+{% include header.html %}
+{% include pageheader.html %}
+<article class="activity">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <p><a href="#">Toevoegen aan favorieten</a></p>
+    </header>
+    <section class="main">
+        {{content}}
+    </section>
+    <section class="sidebar">
+        <div class="sideblock">
+            <h2>Wanneer?</h2>
+            <ol>
+                <li>
+                    Zat. <time datetime="2018-08-18T14:00">14</time>-<time datetime="2018-08-18T16:00">16</time>u
+                </li>
+                <li>
+                    Zon. <time datetime="2018-08-19T10:00">10</time>-<time datetime="2018-08-19T12:00">12</time>u
+                </li>
+            </ol>
+        </div>
+        <div class="sideblock">
+            <h2>Waar?</h2>
+            <a href="#"><img src="http://via.placeholder.com/300.png?text=kaartje" width="100%" alt="Locatie van het hoofdgebouw" /></a>
+            <p><a href="#">Hoofdgebouw</a></p>
+        </div>
+
+        <div class="sideblock">
+            <h2>Duur</h2>
+            <time datetime="P20M">20 minuten</time>
+            <p>Dit is een inloopactiviteit <a href="#" class="tooltip" data-content="Bij een inloopactiviteit hoef je niet van begin tot einde aanwezig te zijn, maar kan je doorlopend inpikken."></a></p>
+        </div>
+        <div class="sideblock">
+            <h2>Aantal deelnemers</h2>
+            <p class="participants">Max. 50 deelnemers <a href="#" class="tooltip" data-content="Het maximum aantal deelnemers kan bepaald worden door de locatie of door beschikbaarheid van materiaal. Zorg dat je op tijd aanwezig bent om te kunnen deelnemen."></a></p>
+        </div>
+        <div class="sideblock">
+            <h2>Voor wie?</h2>
+            <p>Geschikt voor kinderen alleen</p>
+        </div>
+        <div class="sideblock">
+            <h2>Kostprijs</h2>
+            <p>€ 2 per deelnemer (materiaalkost)</p>
+        </div>
+        <div class="sideblock">
+            <h2>Type</h2>
+            <p>Workshop <a href="#" class="tooltip" data-content="Bij een workshop ga je actief aan de slag en heb je achteraf een concreet resultaat."></a></p>
+        </div>
+        <div class="sideblock">
+            <h2>Tags</h2>
+            <div class="taglist">
+                <a class="tag" href="#">Een thema</a>
+                <a class="tag" href="#">Een ander thema</a>
+            </div>
+        </div>
+        <div class="sideblock">
+            <h2>Organisator</h2>
+            <p class="person"><a href="#">Gordon Clarke</a></p>
+        </div>
+    </section>
+    <section class="admintools">
+        <ul>
+            <li>
+                <a href="#">Bewerken</a>
+            </li>
+            <li>
+                <a href="#">Verbergen</a>
+            </li>
+        </ul>
+    </section>
+</article>
+{% include footer.html %}
