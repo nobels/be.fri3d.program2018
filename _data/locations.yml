@@ -1,0 +1,18 @@
+- name: hoofdgebouw
+  desc: Hoofdgebouw
+  longdesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet augue eu sem pharetra dapibus. Aliquam mollis commodo erat a tempus. Ut lacinia diam ac orci lacinia, id maximus sem pretium. Sed at lacinia ligula. Fusce eget purus id nunc pulvinar pulvinar laoreet ut mauris. Nunc eget vestibulum lacus, in varius urna.
+- name: shelter
+  desc: Shelter
+  longdesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet augue eu sem pharetra dapibus. Aliquam mollis commodo erat a tempus. Ut lacinia diam ac orci lacinia, id maximus sem pretium. Sed at lacinia ligula. Fusce eget purus id nunc pulvinar pulvinar laoreet ut mauris. Nunc eget vestibulum lacus, in varius urna.
+- name: berkenhof
+  desc: Berkenhof
+  longdesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet augue eu sem pharetra dapibus. Aliquam mollis commodo erat a tempus. Ut lacinia diam ac orci lacinia, id maximus sem pretium. Sed at lacinia ligula. Fusce eget purus id nunc pulvinar pulvinar laoreet ut mauris. Nunc eget vestibulum lacus, in varius urna.
+- name: speelveld
+  desc: Speelveld
+  longdesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet augue eu sem pharetra dapibus. Aliquam mollis commodo erat a tempus. Ut lacinia diam ac orci lacinia, id maximus sem pretium. Sed at lacinia ligula. Fusce eget purus id nunc pulvinar pulvinar laoreet ut mauris. Nunc eget vestibulum lacus, in varius urna.
+- name: dronefield
+  desc: Drone field
+  longdesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet augue eu sem pharetra dapibus. Aliquam mollis commodo erat a tempus. Ut lacinia diam ac orci lacinia, id maximus sem pretium. Sed at lacinia ligula. Fusce eget purus id nunc pulvinar pulvinar laoreet ut mauris. Nunc eget vestibulum lacus, in varius urna.
+- name: knutselbaar
+  desc: Knutselba(a)r
+  longdesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet augue eu sem pharetra dapibus. Aliquam mollis commodo erat a tempus. Ut lacinia diam ac orci lacinia, id maximus sem pretium. Sed at lacinia ligula. Fusce eget purus id nunc pulvinar pulvinar laoreet ut mauris. Nunc eget vestibulum lacus, in varius urna.

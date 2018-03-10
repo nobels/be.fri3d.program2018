@@ -12,51 +12,65 @@
         <div class="sideblock">
             <h2>Wanneer?</h2>
             <ol>
+                {% for slot in page.timeslots %}
                 <li>
-                    Zat. <time datetime="2018-08-18T14:00">14</time>-<time datetime="2018-08-18T16:00">16</time>u
+                    <time datetime="{{ slot.start }}">{{ slot.start | date: "%a %R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time><br />
+                    {% for item in site.data.locations %}
+                        {% if item.name == slot.location %}
+                        <a href="/locations/{{ slot.location }}">{{ item.desc }}</a>
+                        {% endif %}
+                    {% endfor %}
                 </li>
-                <li>
-                    Zon. <time datetime="2018-08-19T10:00">10</time>-<time datetime="2018-08-19T12:00">12</time>u
-                </li>
+                {% endfor %}
             </ol>
         </div>
         <div class="sideblock">
-            <h2>Waar?</h2>
-            <a href="#"><img src="http://via.placeholder.com/300.png?text=kaartje" width="100%" alt="Locatie van het hoofdgebouw" /></a>
-            <p><a href="#">Hoofdgebouw</a></p>
-        </div>
-
-        <div class="sideblock">
             <h2>Duur</h2>
-            <time datetime="P20M">20 minuten</time>
-            <p>Dit is een inloopactiviteit <a href="#" class="tooltip" data-content="Bij een inloopactiviteit hoef je niet van begin tot einde aanwezig te zijn, maar kan je doorlopend inpikken."></a></p>
+            <time datetime="P{{ page.duration }}M">{{ page.duration }} minuten</time>
+            {% for item in site.data.metadata.durtypes %}
+                {% if item.name == page.durtype %}
+                <p>{{ item.desc }} <a href="#" class="tooltip" data-content="{{ item.longdesc }}"><i class="material-icons">info</i></a></p>
+                {% endif %}
+            {% endfor %}
+
         </div>
         <div class="sideblock">
             <h2>Aantal deelnemers</h2>
-            <p class="participants">Max. 50 deelnemers <a href="#" class="tooltip" data-content="Het maximum aantal deelnemers kan bepaald worden door de locatie of door beschikbaarheid van materiaal. Zorg dat je op tijd aanwezig bent om te kunnen deelnemen."></a></p>
+            <p class="participants">{{ page.participants }} <a href="#" class="tooltip" data-content="Het maximum aantal deelnemers kan bepaald worden door de locatie of door beschikbaarheid van materiaal. Zorg dat je op tijd aanwezig bent om te kunnen deelnemen."><i class="material-icons">info</i></a></p>
         </div>
         <div class="sideblock">
             <h2>Voor wie?</h2>
-            <p>Geschikt voor kinderen alleen</p>
+            <p>{{ page.audience }} <a href="#" class="tooltip" data-content="Tenzij specifiek anders vermeld, is elke activiteit (ook) geschikt voor volwassenen"><i class="material-icons">info</i></a></p>
         </div>
         <div class="sideblock">
             <h2>Kostprijs</h2>
-            <p>€ 2 per deelnemer (materiaalkost)</p>
+            <p>{{ page.cost }}</p>
         </div>
         <div class="sideblock">
             <h2>Type</h2>
-            <p>Workshop <a href="#" class="tooltip" data-content="Bij een workshop ga je actief aan de slag en heb je achteraf een concreet resultaat."></a></p>
+            {% for item in site.data.metadata.types %}
+                {% if item.name == page.type %}
+                <p>{{ item.desc }} <a href="#" class="tooltip" data-content="{{ item.longdesc }}"><i class="material-icons">info</i></a></p>
+                {% endif %}
+            {% endfor %}
         </div>
+        {% if page.tags %}
         <div class="sideblock">
             <h2>Tags</h2>
             <div class="taglist">
-                <a class="tag" href="#">Een thema</a>
-                <a class="tag" href="#">Een ander thema</a>
+                {% for tag in page.tags %}
+                <a class="tag" href="/tags/{{tag}}">{{tag}}</a>
+                {% endfor %}
             </div>
         </div>
+        {% endif %}
         <div class="sideblock">
             <h2>Organisator</h2>
-            <p class="person"><a href="#">Gordon Clarke</a></p>
+            {% for item in site.data.people %}
+                {% if item.name == page.organisator %}
+                <p class="person"><a href="/people#{{item.name}}">{{item.desc}}</a></p>
+                {% endif %}
+            {% endfor %}
         </div>
     </section>
     <section class="admintools">

@@ -1,0 +1,17 @@
+durtypes:
+    - name: inloop
+      desc: Dit is een inloopactiviteit
+      longdesc: Bij een inloopactiviteit hoef je niet van begin tot einde aanwezig te zijn, maar kan je doorlopend inpikken.
+    - name: fulldur
+      desc: Volledige aanwezigheid gevraagd
+      longdesc: Je kan niet doorlopend aansluiten bij deze activiteit, je moet van de start tot het einde aanwezig zijn.
+types:
+    - name: workshop
+      desc: Workshop
+      longdesc: Bij een workshop ga je actief aan de slag en heb je achteraf een concreet resultaat.
+    - name: presentation
+      desc: Presentatie
+      longdesc: Bij een presentatie krijg je informatie over een bepaald onderwerp door één of meer sprekers.
+    - name: other
+      desc: Ander type
+      longdesc: Bij een andere activiteit wordt een specifieke werkvorm gebruikt. Check de beschrijving van de activiteit voor meer informatie.
