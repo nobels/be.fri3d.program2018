@@ -4,3 +4,7 @@
 </script>
 <script src="{{ site.baseurl }}/js/plugins.js?{{site.time | date: '%s%N'}}"></script>
 <script src="{{ site.baseurl }}/js/main.js?{{site.time | date: '%s%N'}}"></script>
+{% if 'list' == page.layout %}
+<script src="{{ site.baseurl }}/js/vendor/list.min.js?{{site.time | date: '%s%N'}}"></script>
+<script src="{{ site.baseurl }}/js/list.js?{{site.time | date: '%s%N'}}"></script>
+{% endif %}

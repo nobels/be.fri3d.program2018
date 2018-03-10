@@ -1,0 +1,16 @@
+days:
+  - Maandag
+  - Dinsdag
+  - Woensdag
+  - Donderdag
+  - Vrijdag
+  - Zaterdag
+  - Zondag
+days_abbr:
+  - Ma
+  - Di
+  - Wo
+  - Do
+  - Vr
+  - Za
+  - Zo

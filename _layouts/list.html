@@ -1,0 +1,65 @@
+{% include header.html %}
+{% include pageheader.html %}
+<p>{{content}}</p>
+<div id="programma" class="programma">
+    <div class="listhead">
+        <div class="searchbox">
+          <label for="search">Doorzoek het programma</label>
+          <input class="search" name="search" placeholder="Typ een zoekterm" />
+        </div>
+        <div class="nrfound"><span class="count">0</span> Activiteiten</div>
+    </div>
+  <table class="programma-tbl">
+    <thead>
+        <tr>
+          <th class="col-ttl"><button class="sort" data-sort="act-ttl">
+              <i class="material-icons">sort</i> Titel</button>
+          </th>
+          <th class="col-time">
+              <button class="sort" data-sort="act-timestamp">
+              <i class="material-icons">sort</i> Tijdstip</button>
+          </th>
+          <th class="col-location">
+              <button class="sort" data-sort="act-location"><i class="material-icons">sort</i> Locatie
+            </button>
+          </th>
+          <th class="col-type">
+              <button class="sort" data-sort="act-type"><i class="material-icons">sort</i> Type
+            </button>
+          </th>
+        </tr>
+    </thead>
+    <tbody class="list">
+      {% for item in site.data.programma %}
+      <tr class="programma-row">
+          {% assign day = item.start | date: "%u" | minus: 1 %}
+          <td>
+              <h2><a href="activity.html" class="act-ttl">{{item.title}}</a></h2>
+              <p class="act-desc visuallyhidden">{{item.desc}}</p>
+          </td>
+          <td><span class="act-timestamp visuallyhidden">{{ item.start }}</span>
+              <time datetime="{{ item.start }}" class="act-time">{{ site.data.nl.days[day] }}, {{ item.start | date: "%R" }}</time> - <time datetime="{{ item.end }}">{{ item.end | date: "%R" }}</time>
+          </td>
+          <td>
+              {% for loc in site.data.locations %}
+                  {% if loc.name == item.location %}
+                  <a href="/locations/{{ item.location }}" class="act-location">{{ loc.desc }}</a>
+                  {% endif %}
+              {% endfor %}
+          </td>
+          <td class="act-type">
+              {% for type in site.data.metadata.types %}
+                  {% if type.name == item.type %}
+                  {{ type.desc }}
+                  {% endif %}
+              {% endfor %}
+          </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <div class="notice notice-info noresults">
+      <p>Geen enkele activiteit voldoet aan je zoekopdracht :'(</p>
+  </div>
+</div>
+{% include footer.html %}

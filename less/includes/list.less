@@ -1,0 +1,74 @@
+.programma .search {
+    padding: @margin;
+}
+
+.listhead {
+    display:flex;
+    justify-content: space-between;
+    padding:@margin;
+    padding-bottom: @margin*2;
+    background-color: @clr-gray5;
+    @media screen and (max-width: @breakpoint2) {
+        display:block;
+    }
+}
+
+.programma .noresults {
+    display: none;
+}
+
+.listhead .nrfound {
+    text-align: right;
+    @media screen and (max-width: @breakpoint2) {
+        text-align: left;
+    }
+    padding-top: @margin+1px;
+}
+.programma-tbl {
+    box-sizing: border-box;
+    margin-bottom: @margin*3;
+    width: 100%;
+    td, th {
+        border:1px solid @clr-gray4;
+        padding: @margin;
+        box-sizing: border-box;
+        @media screen and (max-width: @breakpoint2) {
+            display: block;
+            border-top:0;
+            border-bottom: 0;
+        }
+    }
+    tr {
+        @media screen and (max-width: @breakpoint2) {
+            border-bottom:1px solid @clr-gray4;
+        }
+    }
+}
+.programma-tbl {
+    .col-ttl {
+        width: 40%;
+    }
+    .col-time {
+        width: 30%;
+    }
+    .col-location {
+        width: 20%;
+    }
+    .col-type {
+        width: 10%;
+    }
+    @media screen and (max-width: @breakpoint2) {
+        .col-ttl, .col-time, .col-location, .col-type {
+            width: 100%;
+        }
+    }
+}
+.programma-tbl thead {
+    text-align: left;
+    background-color: @clr-gray4;
+}
+.programma-tbl thead button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
