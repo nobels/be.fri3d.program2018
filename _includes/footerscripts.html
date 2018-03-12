@@ -8,3 +8,34 @@
 <script src="{{ site.baseurl }}/js/vendor/list.min.js?{{site.time | date: '%s%N'}}"></script>
 <script src="{{ site.baseurl }}/js/list.js?{{site.time | date: '%s%N'}}"></script>
 {% endif %}
+{% if 'calendar' == page.layout %}
+<script src='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/lib/moment.min.js'></script>
+<script src='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/fullcalendar.min.js'></script>
+<script src='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/locale-all.js'></script>
+<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay,listMonth'
+      },
+      defaultDate: '2018-03-12',
+      locale: 'nl-be',
+      buttonIcons: false, // show the prev/next text
+      weekNumbers: true,
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: {
+        url: '{{ site.baseurl }}/programma.json',
+        error: function() {
+          console.log("i haz an error");
+        }
+      }
+    });
+  });
+</script>
+{% endif %}

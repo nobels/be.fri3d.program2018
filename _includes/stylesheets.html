@@ -2,3 +2,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+{% if 'calendar' == page.layout %}
+<link href='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/fullcalendar.min.css' rel='stylesheet' />
+<link href='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+{% endif %}
