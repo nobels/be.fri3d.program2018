@@ -1,13 +1,18 @@
 .activity {
     display: grid;
-    grid-template-columns: [main] auto [sidebar] (200px*2 + @margin*4) [end];
-    @media screen and (max-width: @breakpoint0) {
-        grid-template-columns: [main] auto [sidebar] (200px + @margin*2) [end];
+    grid-template-columns: [main] auto [sidebar1] (200px + @margin*2) [sidebar2] (200px + @margin*2) [end];
+    max-width: @breakpointxl;
+    @media screen and (max-width: @breakpoint1) {
+        grid-template-columns: [main sidebar1] 50% [sidebar2] 50% [end];
+        grid-template-rows: [begin] auto [main] auto [sidebars]
     }
-    @media screen and (min-width: @breakpointxl) {
-        grid-template-columns: [main] auto [sidebar] (200px*3 + @margin*6) [end];
+    @media screen and (max-width: @breakpoint3) {
+        grid-template-columns: [main sidebar1 sidebar2] auto [end];
+        grid-template-rows: [begin] auto [main] auto [sidebar1] auto [sidebar2] auto [end];
     }
-
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     //grid-template-columns: auto [sidebar] 266px 266px [end];
     grid-template-rows: auto;
 }
@@ -23,45 +28,79 @@
 }
 
 .activity .main {
-    @media screen and (max-width: @rulelength) {
-        grid-column: 1 / end;
-        grid-row: 2 / span 1;
-    }
     padding-right: (@margin*4);
-    grid-column: 1 / sidebar ;
+    grid-column: 1 / sidebar1 ;
     grid-row: 2 / span 1;
     //background-color: @clr-secondary7;
+    @media screen and (max-width: @breakpoint1) {
+        grid-column: main / span 2;
+    }
+    @media screen and (max-width: @breakpoint3) {
+        grid-column: main / end;
+    }
 }
 
 .admintools {
     grid-column: 1 / end;
 }
 
-.activity .sidebar {
-    @media screen and (max-width: @rulelength) {
-        grid-column: 1 / end;
-        grid-row: 3 / span 1;
-        margin-top: (@margin*3)
-    }
-    grid-column: sidebar / end;
+.activity .sidebar1 {
+    grid-column: sidebar1 / sidebar2;
     grid-row: 2 / span 1;
+    //background-color: @clr-primary6;
+    @media screen and (max-width: @breakpoint1) {
+        grid-row: sidebars / span 1;
+        padding-right: @margin*2;
+    }
+    @media screen and (max-width: @breakpoint3) {
+        grid-row: sidebar1 / span 1;
+        grid-column: sidebar1 / span 1;
+    }
+    overflow: auto;
+}
+
+.activity .sidebar2 {
+    grid-column: sidebar2 / end;
+    grid-row: 2 / span 1;
+    @media screen and (max-width: @breakpoint1) {
+        grid-row: sidebars / span 1;
+        padding-left: @margin*2;
+    }
+    @media screen and (max-width: @breakpoint3) {
+        grid-row: sidebar2 / span 1;
+        grid-column: sidebar2 / span 1;
+    }
     //background-color: @clr-primary6;
     overflow: auto;
 }
 
-
 .sideblock {
-    float: left;
-    width: 200px;
     margin-left: (@margin*2);
-    @media screen and (max-width: @rulelength) {
-        margin-left: 0;
-        margin-right: (@margin*2);
-    }
-    @media screen and (max-width: @breakpoint3) {
-        width: 100%;
+    @media screen and (max-width: @breakpoint1) {
         margin-left: 0;
         margin-right: 0;
     }
     margin-bottom: @margin*3;
+}
+
+.activity-footer {
+    margin-top:@margin*3;
+}
+
+.activity-footer .footerblock {
+    margin-bottom: @margin*3;
+}
+
+.timeslots {
+    list-style: none;
+    padding:0;
+    margin:0;
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: @margin*2;
+        padding-left: @margin*2;
+        border-left: 2px solid @clr-gray4;
+    }
 }

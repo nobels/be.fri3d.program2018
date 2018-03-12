@@ -3,15 +3,31 @@
 <article class="activity">
     <header>
         <h1>{{ page.title }}</h1>
-        <p><a href="#">Toevoegen aan favorieten</a></p>
+        <p><a href="#">Toevoegen aan 'Mijn Programma'</a></p>
     </header>
     <section class="main">
         {{content}}
+        <footer class="activity-footer">
+            <div class="footerblock">
+                <h2>Voor wie?</h2>
+                <p>{{ page.audience }} <a href="#" class="tooltip" data-content="Tenzij specifiek anders vermeld, is elke activiteit (ook) geschikt voor volwassenen"><i class="material-icons">info</i></a></p>
+            </div>
+            {% if page.tags %}
+            <div class="footerblock">
+                <h2>Tags</h2>
+                <div class="taglist">
+                    {% for tag in page.tags %}
+                    <a class="tag" href="/tags/{{tag}}">{{tag}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </footer>
     </section>
-    <section class="sidebar">
+    <section class="sidebar1">
         <div class="sideblock">
             <h2>Wanneer?</h2>
-            <ol>
+            <ol class="timeslots">
                 {% for slot in page.timeslots %}
                 <li>
                     <time datetime="{{ slot.start }}">{{ slot.start | date: "%a %R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time><br />
@@ -25,28 +41,6 @@
             </ol>
         </div>
         <div class="sideblock">
-            <h2>Duur</h2>
-            <time datetime="P{{ page.duration }}M">{{ page.duration }} minuten</time>
-            {% for item in site.data.metadata.durtypes %}
-                {% if item.name == page.durtype %}
-                <p>{{ item.desc }} <a href="#" class="tooltip" data-content="{{ item.longdesc }}"><i class="material-icons">info</i></a></p>
-                {% endif %}
-            {% endfor %}
-
-        </div>
-        <div class="sideblock">
-            <h2>Aantal deelnemers</h2>
-            <p class="participants">{{ page.participants }} <a href="#" class="tooltip" data-content="Het maximum aantal deelnemers kan bepaald worden door de locatie of door beschikbaarheid van materiaal. Zorg dat je op tijd aanwezig bent om te kunnen deelnemen."><i class="material-icons">info</i></a></p>
-        </div>
-        <div class="sideblock">
-            <h2>Voor wie?</h2>
-            <p>{{ page.audience }} <a href="#" class="tooltip" data-content="Tenzij specifiek anders vermeld, is elke activiteit (ook) geschikt voor volwassenen"><i class="material-icons">info</i></a></p>
-        </div>
-        <div class="sideblock">
-            <h2>Kostprijs</h2>
-            <p>{{ page.cost }}</p>
-        </div>
-        <div class="sideblock">
             <h2>Type</h2>
             {% for item in site.data.metadata.types %}
                 {% if item.name == page.type %}
@@ -54,16 +48,6 @@
                 {% endif %}
             {% endfor %}
         </div>
-        {% if page.tags %}
-        <div class="sideblock">
-            <h2>Tags</h2>
-            <div class="taglist">
-                {% for tag in page.tags %}
-                <a class="tag" href="/tags/{{tag}}">{{tag}}</a>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
         <div class="sideblock">
             <h2>Organisator</h2>
             {% for item in site.data.people %}
@@ -71,6 +55,25 @@
                 <p class="person"><a href="/people#{{item.name}}">{{item.desc}}</a></p>
                 {% endif %}
             {% endfor %}
+        </div>
+    </section>
+    <section class="sidebar2">
+        <div class="sideblock">
+            <h2>Duur</h2>
+            <time datetime="P{{ page.duration }}M">{{ page.duration }} minuten</time>
+            {% for item in site.data.metadata.durtypes %}
+                {% if item.name == page.durtype %}
+                <p>{{ item.desc }} <a href="#" class="tooltip" data-content="{{ item.longdesc }}"><i class="material-icons">info</i></a></p>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="sideblock">
+            <h2>Aantal deelnemers</h2>
+            <p class="participants">{{ page.participants }} <a href="#" class="tooltip" data-content="Het maximum aantal deelnemers kan bepaald worden door de locatie of door beschikbaarheid van materiaal. Zorg dat je op tijd aanwezig bent om te kunnen deelnemen."><i class="material-icons">info</i></a></p>
+        </div>
+        <div class="sideblock">
+            <h2>Kostprijs</h2>
+            <p>{{ page.cost }}</p>
         </div>
     </section>
     <section class="admintools">
