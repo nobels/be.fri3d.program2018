@@ -2,9 +2,35 @@
     padding:0 (@margin*3);
 }
 .breadcrumb {
-    max-width: @breakpointxl;
+    max-width: 100%;
     padding-left: @margin*3;
     padding-right: @margin*3;
     margin-left: auto;
     margin-right: auto;
+}
+.layout-activity .breadcrumb {
+    max-width: @breakpointxl;
+}
+.popover-wrapper {
+    display: grid;
+    width: 100vw;
+    height:100vh;
+    //border: 2px solid red;
+    //box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top:0;
+    grid-template-columns: [main] auto [center]
+        @rulelength auto [end];
+    grid-template-rows: [main] auto [center] auto auto [end];
+    z-index: 10;
+    @media screen and (max-width: @breakpoint1) {
+        grid-template-columns: [main] auto [center]
+            500px auto [end];
+        grid-template-rows: [main] auto [center] auto auto [end];
+    }
+    @media screen and (max-width: @breakpoint2) {
+        grid-template-columns: [center] auto [end];
+        grid-template-rows: [center] auto auto [end];
+    }
 }

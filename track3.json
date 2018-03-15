@@ -1,0 +1,354 @@
+[
+{
+    "title": "Opening Ceremonie",
+    "desc": "Anthony opent kamp, Keynote 1 volgt. Dries en Christophe doen eerste deel dagelijks overzicht van programma.",
+    "type": "other",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T18:00"
+},
+{
+    "title": "Introduction to Asyncio in Python",
+    "desc": "Asyncio is the new approach introduced in Python 3 for dealing with asynchronous inputs and outputs (eg: a chat server with many people talking at the same time).\r\nThis workshop will help you grasp the different concepts (coroutine, event loop, ...) and apply them on practical examples.",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T18:00"
+},
+{
+    "title": "V++ Capture The Flag",
+    "desc": "Bij elk hacker camp hoort een Capture The Flag! In samenwerking met ons Belgische CTF team (V++), lanceren we een junior CTF voor Fr13d Camp. HSBXL sponsort Azure credits om het platform te hosten, deelnemers kunnen verbinden via een platform.\r\n\r\nhttps://www.cybersecuritychallenge.org.uk/competitions/capture-the-flag\r\nhttps://ctftime.org/ctf-wtf/",
+    "type": "other",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T18:00"
+},
+{
+    "title": "Kampvuurverhalen",
+    "desc": "Bij het vallen van de avond komen we samen rond een kampvuur en vertellen we verhalen. Ik leg de basics uit die voorkomen in elk goed verhaal, waarna we samen een nieuw verhaal opbouwen aan de hand van elementen die door de groep worden aangereikt. Activiteit geschikt voor alle leeftijden.",
+    "type": "other",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T18:00"
+},
+{
+    "title": "Kampvuurverhalen",
+    "desc": "Bij het vallen van de avond komen we samen rond het kampvuur om te luisteren naar verhalen en er zelf ook enkele te vertellen. Deelnemers leren er de basics van wat een goed verhaal nodig heeft en kunnen het verhaal van de avond mee vorm geven door eigen elementen aan te reiken. Voor deelnemers van alle leeftijden.",
+    "type": "other",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T18:00"
+},
+{
+    "title": "Kampvuurverhalen",
+    "desc": "Bij het vallen van de avond komen we samen rond het kampvuur om te luisteren naar verhalen en er zelf ook enkele te vertellen. Deelnemers leren er de basics van wat een goed verhaal nodig heeft en kunnen het verhaal van de avond mee vorm geven door eigen elementen aan te reiken. Voor deelnemers van alle leeftijden.",
+    "type": "other",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T18:00",
+    "end": "2018-08-18T18:30"
+},
+{
+    "title": "Kampvuurverhalen",
+    "desc": "Bij het vallen van de avond komen we samen rond het kampvuur om te luisteren naar verhalen en er zelf ook enkele te vertellen. Deelnemers leren er de basics van wat een goed verhaal nodig heeft en kunnen het verhaal van de avond mee vorm geven door eigen elementen aan te reiken. Voor deelnemers van alle leeftijden.",
+    "type": "other",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T18:00",
+    "end": "2018-08-18T18:30"
+},
+{
+    "title": "Fijnstofmeter bouwen",
+    "desc": "Bouw zelf je eigen fijnstofmeter en meet hoe goed of slecht de lucht is die je inadement. We koppelen de SDS011 fijnstofsensor aan je badge, of bouwen een volledige standalone meter voor buiten. Doe mee met het citizen science project \"luftdaten\" en vul de fijnstofkaart in je buurt aan door je je metingen met de wereld te delen.",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T18:00",
+    "end": "2018-08-18T18:30"
+},
+{
+    "title": "Fijnstofmeter bouwen",
+    "desc": "Bouw zelf je eigen fijnstofmeter en meet hoe goed of slecht de lucht is die je inadement. We koppelen de SDS011 fijnstofsensor aan je badge, of bouwen een volledige standalone meter voor buiten. Doe mee met het citizen science project \"luftdaten\" en vul de fijnstofkaart in je buurt aan door je je metingen met de wereld te delen.",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "Fijnstofmeter bouwen",
+    "desc": "Bouw zelf je eigen fijnstofmeter en meet hoe goed of slecht de lucht is die je inadement. We koppelen de SDS011 fijnstofsensor aan je badge, of bouwen een volledige standalone meter voor buiten. Doe mee met het citizen science project \"luftdaten\" en vul de fijnstofkaart in je buurt aan door je je metingen met de wereld te delen.",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "chain maille juwelen",
+    "desc": "Chain maille of maliën is een techniek die in de middeleeuwen gebruikt werd om maliënkolders te maken. Dezelfde techniek kan ook gebruikt worden om juwelen te maken (http://bert.debruijn.be/chainmail/IMG_5073.JPG). Door de keuze van mooie patronen zijn de mogelijkheden haast eindeloos. In deze workshop kan je oorhangers of een armbandje maken.",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "Maak een eigen choreografie",
+    "desc": "Choreografie in thema robots zelf in elkaar steken en uitvoeren.",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "Ladies night: Tassel twirling",
+    "desc": "De \"Queen of Tassels\" gaat met jullie aan de slag om je volgende striptease met een absolute knaller te laten eindigen!  Heb je zelf nippies met tassels, breng ze mee, anders kun je er lenen voor de workshop.  Breng wat drank mee om in de gepaste, losse stemming te komen ;-)",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "De Fri3d Digitale Redactie",
+    "desc": "'De bedoeling is dat we via een eigen mobiele app verhalen verzamelen van alles wat er zich tijdens Fri3d Camp afspeelt. We gaan als reporters op pad en zoeken interessante interactiemogelijkheden die via de app worden gestuurd. Met de ingestuurde verhalen, foto''s en video''s maken we leuke en interessante multimediale realisaties gedurende het WE.'",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "Digitale Helden - Scratch voor jonge hackers",
+    "desc": "De Digitale Helden zijn jonge (10-12j) enthousiastelingen uit de binnenstad van Antwerpen die al een tijdje bezig zijn met Scratch, MBot en Arduino. In deze open workshop leer je hoeveel ze kunnen met enkel visueel programmeren in een Scratch-omgeving. Robotten programmeren, electronische circuits met Arduino, het kan allemaal in Scratch!",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "Heb jij een neus voor reclame?",
+    "desc": "De laatste jaren zorgde de digitale evolutie voor heel wat veranderingen in de reclamewereld. Door de hoge graad van personalisatie, integratie en interactiviteit is het moeilijk om deze reclame te herkennen. Kinderen worden op een onbewuste manier beïnvloed. Daarom is het belangrijk dat kinderen een neus voor reclame leren ontwikkelen.",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "Heb jij een neus voor reclame?",
+    "desc": "De laatste jaren zorgde de digitale evolutie voor heel wat veranderingen in de reclamewereld. Door de hoge graad van personalisatie, integratie en interactiviteit is het moeilijk om deze reclame te herkennen. Kinderen worden op een onbewuste manier beïnvloed. Daarom is het belangrijk dat kinderen een neus voor reclame leren ontwikkelen.",
+    "type": "workshop",
+    "location": "hoofdgebouw",
+    "start": "2018-08-18T16:00",
+    "end": "2018-08-18T16:30"
+},
+{
+    "title": "Heb jij een neus voor reclame?",
+    "desc": "De laatste jaren zorgde de digitale evolutie voor heel wat veranderingen in de reclamewereld. Door de hoge graad van personalisatie, integratie en interactiviteit is het moeilijk om deze reclame te herkennen. Kinderen worden op een onbewuste manier beïnvloed. Daarom is het belangrijk dat kinderen een neus voor reclame leren ontwikkelen.",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Heb jij een neus voor reclame?",
+    "desc": "De laatste jaren zorgde de digitale evolutie voor heel wat veranderingen in de reclamewereld. Door de hoge graad van personalisatie, integratie en interactiviteit is het moeilijk om deze reclame te herkennen. Kinderen worden op een onbewuste manier beïnvloed. Daarom is het belangrijk dat kinderen een neus voor reclame leren ontwikkelen.",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Heb jij een neus voor reclame?",
+    "desc": "De laatste jaren zorgde de digitale evolutie voor heel wat veranderingen in de reclamewereld. Door de hoge graad van personalisatie, integratie en interactiviteit is het moeilijk om deze reclame te herkennen. Kinderen worden op een onbewuste manier beïnvloed. Daarom is het belangrijk dat kinderen een neus voor reclame leren ontwikkelen.",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Heb jij een neus voor reclame?",
+    "desc": "De laatste jaren zorgde de digitale evolutie voor heel wat veranderingen in de reclamewereld. Door de hoge graad van personalisatie, integratie en interactiviteit is het moeilijk om deze reclame te herkennen. Kinderen worden op een onbewuste manier beïnvloed. Daarom is het belangrijk dat kinderen een neus voor reclame leren ontwikkelen.",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Heb jij een neus voor reclame?",
+    "desc": "De laatste jaren zorgde de digitale evolutie voor heel wat veranderingen in de reclamewereld. Door de hoge graad van personalisatie, integratie en interactiviteit is het moeilijk om deze reclame te herkennen. Kinderen worden op een onbewuste manier beïnvloed. Daarom is het belangrijk dat kinderen een neus voor reclame leren ontwikkelen.",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Eerste Belgisch Kampioenschap voor Bipedal Robots",
+    "desc": "De robots die gemaakt werden tijdens het kamp gaan nu de strijd aan in verschillende disciplines.",
+    "type": "other",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Tesla coil demo",
+    "desc": "Demo van de tesla coil die er vorige editie ook was",
+    "type": "other",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Bommetjes.  Groter en luider!",
+    "desc": "Die prutsknalletjes van twee jaar geleden, dat was maar om te lachen.  Nu het serieuzere werk.  Geschikt voor kindjes.",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Marvin of waarom mijn robot groter is dan de jouwe",
+    "desc": "Dit is een presentatie die omschrijft waarom Marvin geworden is wat hij is. Welke moeilijkheden er in mijn pad lagen en hoe ik die overwonnen heb.\nEn hoe die het uiteindelijke resultaat hebben bepaald.",
+    "type": "presentation",
+    "location": "shelter",
+    "start": "2018-08-18T20:00",
+    "end": "2018-08-18T21:00"
+},
+{
+    "title": "Maak je eigen zoutdeeg robot, draak of iets totaal anders",
+    "desc": "Doelgroep is kids 4 tot een jaar of 7 (onze eigen kids doen ook mee en zijn 4 en 6). Doel van de workshop is om met zelf zout deeg te maken en te combineren met (eenvoudige) electronica. A la https://www.youtube.com/watch?v=H6vc6V7j4e4&feature=youtu.be We moeten nog checken of we dit kunnen doen met lage kosten & of het werkt/leuk is voor kids.",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-19T10:00",
+    "end": "2018-08-19T11:00"
+},
+{
+    "title": "Goeiemorgen - Maandag",
+    "desc": "Dries en Christophe introduceren het programma van de dag.",
+    "type": "other",
+    "location": "shelter",
+    "start": "2018-08-19T10:00",
+    "end": "2018-08-19T11:00"
+},
+{
+    "title": "Goeiemorgen - Zondag",
+    "desc": "Dries en Christophe introduceren het programma van de dag.",
+    "type": "other",
+    "location": "shelter",
+    "start": "2018-08-19T10:00",
+    "end": "2018-08-19T11:00"
+},
+{
+    "title": "Goeiemorgen - Zaterdag",
+    "desc": "Dries en Christophe introduceren het programma.",
+    "type": "other",
+    "location": "shelter",
+    "start": "2018-08-19T10:00",
+    "end": "2018-08-19T11:00"
+},
+{
+    "title": "Maak je eigen \"Fri3d Camp\" Android app.",
+    "desc": "'Droom je al lang om een eigen app te maken? Kom dan naar de workshop ‘Hoe maak ik mijn eigen Android app''. We gebruiken MIT App Inventor, een visuele programmeeromgeving, waarmee je apps voor Android telefoons en Android tablets kunt maken, gebaseerd op hetzelfde ‘blocks’ (puzzelstukjes) systeem van Scratch. '",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-19T10:30",
+    "end": "2018-08-19T10:45"
+},
+{
+    "title": "Introductie tot artificiële intelligentie",
+    "desc": "Een bondige introductie van de basis bouwstenen en algoritmen gebruikt in \"deep learning\": van neuron tot \"deep neural network\", van regressie en classificatie tot de werking van de auto-encoder. Zo weinig mogelijk wiskunde, zoveel mogelijk intuitie en grafische voorstellingen en simulaties.",
+    "type": "presentation",
+    "location": "shelter",
+    "start": "2018-08-19T10:30",
+    "end": "2018-08-19T10:45"
+},
+{
+    "title": "CNC in 1,2,3",
+    "desc": "Een CNC-machine kan gezien worden als de oudere, wijzere broer van de 3D printer. Terwijl 3D printers werken met het hippe plastic, werkt een CNC-machine door metaal of hout te frezen. Trager uiteraard, maar degelijk en duurzaam. Tot voor kort nam de CNC-machine een halve kamer in beslag, vandaag vindt men echter ook oplossingen voor de hobbyist.",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-19T10:30",
+    "end": "2018-08-19T10:45"
+},
+{
+    "title": "diy laser-room",
+    "desc": "een eigen re-interpretatie van iets als https://www.youtube.com/watch?v=ZqR3Fsrfu0g\r\nhet uiteindelijke resultaat is onmogelijk te voorspellen en zal afhangen van het success van talloze late-night sessies in de hackerspace.",
+    "type": "other",
+    "location": "shelter",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T11:30"
+},
+{
+    "title": "Waarom heeft iedereen het plots over CRISPR?",
+    "desc": "Een interactieve voorstelling over CRISPR, de revolutionaire genetische techniek om veranderingen aan te brengen in het DNA van om het even welk organisme. Elke toeschouwer krijgt een digitaal stembakje en wordt doorheen de voorstelling naar zijn/haar mening gevraagd over een vijftiental stellingen en (ethische) dilemma’s.",
+    "type": "presentation",
+    "location": "shelter",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T11:30"
+},
+{
+    "title": "Waarom zweefvliegen de mooiste luchtsport is",
+    "desc": "Een introductie over zweefvliegen en wat er zoal mogelijk is. De techniek van het vliegen en het vliegtuig. Wat er zo leuk aan is en waarom je dit moet doen. :-)",
+    "type": "presentation",
+    "location": "shelter",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T11:30"
+},
+{
+    "title": "Git it on",
+    "desc": "Een korte introductie tot git, een bekend versie beheersysteem. Tijdens deze kennismaking leer je het principe van commits, branches aan de hand van real-life voorbeelden.\r\nDeelnemers hebben de mogelijkheid om achteraf een initiële ervaring op te doen met git a.d.h.v. een paar praktijkoefeningen.",
+    "type": "presentation",
+    "location": "shelter",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T11:30"
+},
+{
+    "title": "Programmeer een robot arm - Ervaring niet vereist",
+    "desc": "Een leuke programmeer workshop met de uArm pro robot (een 5-axis robot arm).\r\n\r\nDe uArm robot kan via een grafische (scratch) omgeving voor beginners of met Python voor gevorderden geprogrammeerd worden. \r\n\r\nVoor kids vanaf ~8 jaar (en natuurlijk voor iedere leeftijd daarboven)\r\n\r\n",
+    "type": "workshop",
+    "location": "shelter",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T12:00"
+},
+{
+    "title": "Robot met wegwerpmateriaal en natuurlijke elementen",
+    "desc": "Een robot spreekt onmiddellijk tot de verbeelding en die kan er voor iedere anders uitzien. We gaan op zoek naar leuke materialen en toveren de coolste, grappigste of schattigste robots tevoorschijn! We zullen werken met wegwerpmateriaal (spullen die we dagelijks weggooien kunnen zoveel meer zijn dan afval) en dingen die we vinden in de natuur.",
+    "type": "presentation",
+    "location": "shelter",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T12:00"
+},
+{
+    "title": "Zo organiseerden we Fri3d Camp 2018",
+    "desc": "Een verhaaltje over hoe we Fri3d Camp 2018 organiseerden. Je kan niet geloven wat er allemaal bij dit kamp komt kijken.",
+    "type": "presentation",
+    "location": "dronefield",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T12:00"
+},
+{
+    "title": "Post nieuw cert deploy test",
+    "desc": "'Eerste die dat dit echt leest doen''k enen op in café de kosmonaut.'",
+    "type": "presentation",
+    "location": "dronefield",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T12:00"
+},
+{
+    "title": "Coderdojo @ Fri3d Camp",
+    "desc": "'Elke maand komen over het hele land kinderen samen om zelf spelletjes te maken in onze coderdojo''s. Voor wie het de eerste keer zou zijn: hier tonen we jou hoe je zelf kan programmeren, door je eigen computer spelletjes te maken in Scratch of door een robot te besturen met een programma. Wie geen eigen laptop heeft op het kamp kan er een lenen.'",
+    "type": "workshop",
+    "location": "dronefield",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T12:00"
+},
+{
+    "title": "Fri3d 5K",
+    "desc": "Elke ochtend bij het krieken van de dag 5 kilometer lopen - plain & simple ... of misschien toch niet? #Adventure",
+    "type": "other",
+    "location": "dronefield",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T12:00"
+},
+{
+    "title": "programmeeer je fri3d badge met Sloeber (eclipse)",
+    "desc": "En daar heb je hem dan je super nerdy fri3d badge die je kan programmeren .... Maar hoe begin je daaraan?\r\nJe kan natuurlijk de Arduino IDE gebruiken maar met al de aangeboden functionaliteit is een wat meer  uit de  kluiten gewassen IDE op zijn plaats. Een open source uit de kluiten gewassen ide dus zoals Eclipse met de sloeber plugin.\r\n",
+    "type": "workshop",
+    "location": "dronefield",
+    "start": "2018-08-19T11:00",
+    "end": "2018-08-19T12:00"
+}
+]

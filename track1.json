@@ -1,0 +1,337 @@
+﻿[
+	{
+		"title": "Een standaard activiteit",
+		"location": "hoofdgebouw",
+		"start": "2018-08-18T14:00",
+		"end": "2018-08-18T16:00",
+		"organisator": "gordon-clarke",
+		"duration": 20,
+		"durtype": "inloop",
+		"tags": [
+			"lowtech",
+			"robots",
+			"creatief"
+		],
+		"audience": "Geschikt voor kinderen alleen vanaf 8 jaar",
+		"participants": "max. 25 deelnemers\"",
+		"type": "workshop",
+		"cost": "€2 per deelnemer (materiaalkost)\"",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet augue eu sem pharetra dapibus. Aliquam mollis commodo erat a tempus. Ut lacinia diam ac orci lacinia, id maximus sem pretium. Sed at lacinia ligula. Fusce eget purus id nunc pulvinar pulvinar laoreet ut mauris."
+	},
+	{
+		"title": "Een standaard activiteit",
+		"timeslots": null,
+		"location": "hoofdgebouw",
+		"start": "2018-08-19T10:00",
+		"end": "2018-08-19T12:00",
+		"organisator": "gordon-clarke",
+		"duration": 20,
+		"durtype": "inloop",
+		"tags": [
+			"lowtech",
+			"robots",
+			"creatief"
+		],
+		"audience": "Geschikt voor kinderen alleen vanaf 8 jaar",
+		"participants": "max. 25 deelnemers\"",
+		"type": "workshop",
+		"cost": "€2 per deelnemer (materiaalkost)\"",
+		"desc": "Praesent pharetra varius ante sit amet lobortis. Aenean condimentum eleifend turpis, ut lobortis massa volutpat eu. Maecenas quis velit condimentum, blandit eros vel, faucibus arcu."
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T10:00",
+		"end": "2018-08-18T11:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T10:00",
+		"end": "2018-08-18T11:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T10:00",
+		"end": "2018-08-18T11:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T10:00",
+		"end": "2018-08-18T11:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T10:30",
+		"end": "2018-08-18T10:45"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T10:30",
+		"end": "2018-08-18T10:45"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T10:30",
+		"end": "2018-08-18T10:45"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T11:30"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T11:30"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T11:30"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T11:30"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T12:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T12:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T12:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T12:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T12:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T12:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T12:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T11:00",
+		"end": "2018-08-18T12:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T13:00",
+		"end": "2018-08-18T14:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T13:00",
+		"end": "2018-08-18T14:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T13:00",
+		"end": "2018-08-18T14:00"
+	},
+	{
+		"title": "Maak je eigen hydraulische mini-liftkraan",
+		"desc": " Met behulp van spuitjes, darmpjes en water maak je samen met ons je eigen hydraulische mini-liftkraan uit karton. Eentje die echt werkt!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T13:00",
+		"end": "2018-08-18T14:00"
+	},
+	{
+		"title": "DIY Reanimatie met behulp van een AED!",
+		"desc": "(nog niet officiële tekstje) Een workshop om zelf te leren reanimeren met behulp van een Automatische Externe Defibrillator (AED) - een reanimatierobotje als het ware...",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T13:00",
+		"end": "2018-08-18T14:00"
+	},
+	{
+		"title": "DIY Reanimatie met behulp van een AED!",
+		"desc": "(nog niet officiële tekstje) Een workshop om zelf te leren reanimeren met behulp van een Automatische Externe Defibrillator (AED) - een reanimatierobotje als het ware...",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T14:00",
+		"end": "2018-08-18T16:00"
+	},
+	{
+		"title": "DIY Reanimatie met behulp van een AED!",
+		"desc": "(nog niet officiële tekstje) Een workshop om zelf te leren reanimeren met behulp van een Automatische Externe Defibrillator (AED) - een reanimatierobotje als het ware...",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T14:00",
+		"end": "2018-08-18T16:00"
+	},
+	{
+		"title": "DIY Reanimatie met behulp van een AED!",
+		"desc": "(nog niet officiële tekstje) Een workshop om zelf te leren reanimeren met behulp van een Automatische Externe Defibrillator (AED) - een reanimatierobotje als het ware...",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T14:00",
+		"end": "2018-08-18T16:00"
+	},
+	{
+		"title": "Teken een Robot in 3D met Sketchup",
+		"desc": "direct aan de slag met Sketchup,  voorbeelden van basisvormen (kubus, bol, uitstulpen, ...) en eindresultaat (robot),  begeleiders helpen je op weg en helpen je probleempjes op te lossen",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T14:00",
+		"end": "2018-08-18T16:00"
+	},
+	{
+		"title": "A entry, less spammy",
+		"desc": "A entry, less spammy",
+		"type": "presentation",
+		"location": "speelveld",
+		"start": "2018-08-18T14:00",
+		"end": "2018-08-18T16:00"
+	},
+	{
+		"title": "Hackerspace Community",
+		"desc": "A short talk about hackerspaces and our need for community.",
+		"type": "presentation",
+		"location": "speelveld",
+		"start": "2018-08-18T14:00",
+		"end": "2018-08-18T16:00"
+	},
+	{
+		"title": "A. Ooggestuurde interface/ B. Virtuële escaperoom",
+		"desc": "A. Ooggestuurde interface: electrodes, versterker, arduino en S4A: programmeren  pac-man en dan aansturen met ogen.\r\nB. Virtual reality escaperoom:  WebVR  met A-frame in HTML (https://aframe.io/): zichtbaar in Chrome of Firefox, Google Cardboard, Samsung GearVR  (Google Daydream, HTC Vive, Oculus Rift)\r\nVb:  VR-escaperoom: http://drawvr.com/escape/\r\n",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T14:00",
+		"end": "2018-08-18T16:00"
+	},
+	{
+		"title": "ADEM: fijnstofconcentratie op weg naar je werk of je school",
+		"desc": "Adem is een fietssensor. Het mobiele toestel meet de temperatuur, luchtvochtigheid, beweging én concentratie fijn stof en geeft feedback over de verminderde luchtkwaliteit en stuurt de data naar een gezamenlijke kaart die de globale luchtkwaliteit in zichtbaar maakt. Dit open source Timelab project.",
+		"type": "presentation",
+		"location": "speelveld",
+		"start": "2018-08-18T16:00",
+		"end": "2018-08-18T18:00"
+	},
+	{
+		"title": "workshop sjorren",
+		"desc": "Als de herexamens het toe laten zou ik graag langs komen:\r\nAls er sjorbalken aanwezig zijn zou ik graag een workshop sjorren geven aan iedereen die dit wil volgen.\r\nEn dan samen eventueel iets cools maken",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T16:00",
+		"end": "2018-08-18T18:00"
+	},
+	{
+		"title": "Lockpicking",
+		"desc": "Als jullie weer een lokckpicking-tafel wensen, dan kan dat!",
+		"type": "workshop",
+		"location": "speelveld",
+		"start": "2018-08-18T16:00",
+		"end": "2018-08-18T18:00"
+	},
+	{
+		"title": "massa spelen voor de kinderen",
+		"desc": "Als opwarming in de voormiddag om alle kinderen goed wakker te krijgen en iedereen zich te laten uitleven, zou ik wel een uurtje massa spelen willen spelen met de kinderen.\r\n\r\n",
+		"type": "workshop",
+		"location": "hoofdgebouw",
+		"start": "2018-08-18T16:00",
+		"end": "2018-08-18T18:00"
+	},
+	{
+		"title": "AN entry, less spammy",
+		"desc": "AN entry, less spammy",
+		"type": "presentation",
+		"location": "hoofdgebouw",
+		"start": "2018-08-18T16:00",
+		"end": "2018-08-18T18:00"
+	},
+	{
+		"title": "Afsluitende Ceremonie",
+		"desc": "Anthony bedankt iedereen en we gaan moei maar voldaan naar huis.",
+		"type": "other",
+		"location": "hoofdgebouw",
+		"start": "2018-08-18T16:00",
+		"end": "2018-08-18T18:00"
+	}
+]

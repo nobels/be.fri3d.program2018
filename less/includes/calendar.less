@@ -1,0 +1,29 @@
+.calendar-preview {
+    background-color: white;
+    padding:@margin*3;
+    position: absolute;
+    grid-column: center / span 1;
+    grid-row: center / span 1;
+    z-index: 20;
+    display: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+    border-top: 4px solid @clr-tertiary5;
+}
+
+.fc-event.track1 {
+    background-color: @clr-primary7;
+    border-color: @clr-primary4;
+}
+.fc-event.track2 {
+    background-color: @clr-secondary7;
+    border-color: @clr-secondary3;
+}
+.fc-event.track3 {
+    background-color: @clr-tertiary6;
+    border-color: @clr-tertiary5;
+}
+
+.fc-event.calevent-selected {
+    background-color: @clr-tertiary1;
+    border-color: @clr-tertiary5;
+}
