@@ -1,0 +1,12 @@
+{% include header.html %}
+{% include pageheader.html %}
+<p>{{ content }}</p>
+<ul class="navlist">
+    {% if 'locations' == page.collection %}
+        {% assign items = site.locations | sort: 'title' | where: "layout","location" %}
+    {% endif %}
+    {% for item in items %}
+    <li><a href="{{ site.baseurl }}/{{page.collection}}/{{item.name}}.html">{{item.title}}</a></li>
+    {% endfor %}
+</ul>
+{% include footer.html %}

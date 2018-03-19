@@ -1,0 +1,35 @@
+{% include header.html %}
+{% include pageheader.html %}
+<p>{{ content }}</p>
+
+
+{% for item in site.data.programma %}
+    {% if item.tags %}
+        {% assign tagsasstring = item.tags | join: ',' %}
+        {% if taglist %}
+            {% assign taglist = taglist | append: ',' %}
+            {% assign taglist = taglist | append: tagsasstring %}
+        {% else %}
+            {% assign taglist = taglist | append: tagsasstring %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% assign tags = taglist | split:',' | uniq | sort %}
+
+<div class="alltags">
+{% for tag in tags %}
+<div class="tagblock" data-tag="{{tag}}">
+    <h2><a href="{{site.baseurl}}/list.html#tag={{tag}}">{{tag}}</a></h2>
+    <ul>
+    {% for item in site.data.programma %}
+        {% if item.tags contains tag %}
+        <li><a href="activity.html">{{item.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>
+{% endfor %}
+</div>
+
+{% include footer.html %}

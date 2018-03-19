@@ -52,8 +52,10 @@
         }
         &.selected {
             color: white;
-            padding-bottom: (@margin*2) - 5px;
-            border-bottom: solid 5px white;
+            @media screen and (min-width: (@breakpoint2+1px)) {
+                padding-bottom: (@margin*2) - 5px;
+                border-bottom: solid 5px white;
+            }
         }
     }
 

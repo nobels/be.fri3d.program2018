@@ -1,0 +1,25 @@
+{% include header.html %}
+{% include pageheader.html %}
+<article class="contentnode location">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <section class="main">
+        {{ content }}
+        <ul class="activities-list">
+        {% for item in site.data.programma %}
+            {% if item.location == page.name %}
+            <li><time datetime="{{ item.start }}">{{ item.start | date: "%a %R" }}</time> - <time datetime="{{ item.end }}">{{ item.end | date: "%R" }}</time> <a href="{{ site.baseurl }}/activity.html">{{ item.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </section>
+    <section class="sidebarfull">
+        <div class="sideblock sideblock-map">
+        <a href="https://www.openstreetmap.org/#map={{ page.coords }}">
+            <img src="http://staticmap.openstreetmap.de/staticmap.php?center={{ page.coords }}&zoom=40&size=300x300&markers={{ page.coords }},red-pushpin" />
+        </a>
+        </div>
+    </section>
+</article>
+{% include footer.html %}

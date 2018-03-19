@@ -36,14 +36,15 @@
           <td>
               <h2><a href="activity.html" class="act-ttl">{{item.title}}</a></h2>
               <p class="act-desc visuallyhidden">{{item.desc}}</p>
+              <p class="act-tags visuallyhidden">{{item.tags | join: ',' }}</p>
           </td>
           <td><span class="act-timestamp visuallyhidden">{{ item.start }}</span>
               <time datetime="{{ item.start }}" class="act-time">{{ site.data.nl.days[day] }}, {{ item.start | date: "%R" }}</time> - <time datetime="{{ item.end }}">{{ item.end | date: "%R" }}</time>
           </td>
           <td>
-              {% for loc in site.data.locations %}
+              {% for loc in site.locations %}
                   {% if loc.name == item.location %}
-                  <a href="/locations/{{ item.location }}" class="act-location">{{ loc.desc }}</a>
+                  <a href="/locations/{{ item.location }}" class="act-location">{{ loc.title }}</a>
                   {% endif %}
               {% endfor %}
           </td>

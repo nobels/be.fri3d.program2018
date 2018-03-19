@@ -27,3 +27,12 @@
     background-color: @clr-tertiary1;
     border-color: @clr-tertiary5;
 }
+.layout-calendar .contentcontrols {
+    margin-bottom: @margin*2;
+    @media screen and (max-width: @breakpoint1) {
+        flex-wrap:wrap;
+    }
+}
+.layout-calendar .contentcontrols button {
+    white-space: nowrap;
+}

@@ -1,6 +1,6 @@
 {% include header.html %}
 {% include pageheader.html %}
-<article class="activity">
+<article class="contentnode activity">
     <header>
         <h1>{{ page.title }}</h1>
         <p><a href="#">Toevoegen aan 'Mijn Programma'</a></p>
@@ -17,7 +17,7 @@
                 <h2>Tags</h2>
                 <div class="taglist">
                     {% for tag in page.tags %}
-                    <a class="tag" href="/tags/{{tag}}">{{tag}}</a>
+                    <a class="tag" href="{{site.baseurl}}/list.html#tag={{tag}}">{{tag}}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -31,9 +31,9 @@
                 {% for slot in page.timeslots %}
                 <li>
                     <time datetime="{{ slot.start }}">{{ slot.start | date: "%a %R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time><br />
-                    {% for item in site.data.locations %}
+                    {% for item in site.locations %}
                         {% if item.name == slot.location %}
-                        <a href="/locations/{{ slot.location }}">{{ item.desc }}</a>
+                        <a href="/locations/{{ slot.location }}.html">{{ item.title }}</a>
                         {% endif %}
                     {% endfor %}
                 </li>
