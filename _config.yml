@@ -17,7 +17,7 @@ title: Fri3d Camp Program templates
 email: toon@automaton.be
 description: >- # this means to ignore newlines until "baseurl:"
   Static templates for Fri3d Program.
-#baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/be.fri3d.content.templates" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
