@@ -1,3 +1,6 @@
+---
+layout: 'jsfile'
+---
 $(document).ready(function() {
     $('#calendar').fullCalendar({
         customButtons: {
@@ -60,19 +63,19 @@ $(document).ready(function() {
 
             // your event source
             {
-                url: '/track1.json', // use the `url` property
+                url: '{{site.baseurl}}/track1.json', // use the `url` property
                 //color: 'yellow',    // an option!
                 className: 'track1',
                 textColor: 'black' // an option!
             },
             {
-                url: '/track2.json', // use the `url` property
+                url: '{{site.baseurl}}/track2.json', // use the `url` property
                 //color: 'green',    // an option!
                 className: 'track2',
                 textColor: 'black' // an option!
             },
             {
-                url: '/track3.json', // use the `url` property
+                url: '{{site.baseurl}}/track3.json', // use the `url` property
                 //color: 'green',    // an option!
                 className: 'track3',
                 textColor: 'black' // an option!
@@ -115,12 +118,12 @@ $(document).ready(function() {
         var trackname = $(this).data('track');
         $(this).toggleClass("visible");
         if ( !$(this).hasClass("visible") ) {
-            $("#calendar").fullCalendar('removeEventSource', '/'+trackname+'.json');
+            $("#calendar").fullCalendar('removeEventSource', '{{site.baseurl}}/'+trackname+'.json');
             //console.log($(this).children(".material-icons").text());
             $(this).children(".material-icons").text("visibility_off");
         } else {
             $("#calendar").fullCalendar('addEventSource', {
-                url: '/'+trackname+'.json', // use the `url` property
+                url: '{{site.baseurl}}/'+trackname+'.json', // use the `url` property
                 //color: 'blue',    // an option!
                 className: trackname,
                 textColor: 'black' // an option!
