@@ -2010,17 +2010,89 @@ a.button:hover {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
   border-top: 4px solid #B27A00;
 }
+.track1base {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/asfalt-dark.png');
+}
+.track2base {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/dark-circles.png');
+}
+.track3base {
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/dark-stripes.png');
+}
+.track4base {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/black-thread.png');
+}
+.track5base {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/dark-leather.png');
+}
+.track6base {
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/arabesque.png');
+}
 .fc-event.track1 {
   background-color: #ddf0f4;
-  border-color: #03778C;
+  background-image: url('../img/patterns/asfalt-dark.png');
+  border-color: #84cad7;
 }
 .fc-event.track2 {
   background-color: #ffe4e1;
-  border-color: #FF513E;
+  background-image: url('../img/patterns/dark-circles.png');
+  border-color: #ff8d82;
 }
 .fc-event.track3 {
-  background-color: #ffe8b5;
-  border-color: #B27A00;
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/dark-stripes.png');
+  border-color: #ffc94f;
+}
+.fc-event.track4 {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/black-thread.png');
+  border-color: #84cad7;
+}
+.fc-event.track5 {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/dark-leather.png');
+  border-color: #ff8d82;
+}
+.fc-event.track6 {
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/arabesque.png');
+  border-color: #ffc94f;
+}
+.toggletrack[data-track="track1"].visible,
+.toggletrack[data-track="track1"]:hover {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/asfalt-dark.png');
+}
+.toggletrack[data-track="track2"].visible,
+.toggletrack[data-track="track2"]:hover {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/dark-circles.png');
+}
+.toggletrack[data-track="track3"].visible,
+.toggletrack[data-track="track3"]:hover {
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/dark-stripes.png');
+}
+.toggletrack[data-track="track4"].visible,
+.toggletrack[data-track="track4"]:hover {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/black-thread.png');
+}
+.toggletrack[data-track="track5"].visible,
+.toggletrack[data-track="track5"]:hover {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/dark-leather.png');
+}
+.toggletrack[data-track="track6"].visible,
+.toggletrack[data-track="track6"]:hover {
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/arabesque.png');
 }
 .fc-event.calevent-selected {
   background-color: #FFB40F;
@@ -2036,6 +2108,30 @@ a.button:hover {
 }
 .layout-calendar .contentcontrols button {
   white-space: nowrap;
+  color: #493F3A;
+}
+.layout-calendar .contentcontrols button.visible,
+.layout-calendar .contentcontrols button:hover {
+  color: #012e37;
+}
+.layout-calendar .contentcontrols button.visible:hover {
+  color: #493F3A;
+  background-color: #EDEDED;
+  background-image: none;
+}
+@media screen and (max-width: 550px) {
+  .layout-calendar .fc-toolbar .fc-right,
+  .layout-calendar .fc-toolbar .fc-left {
+    float: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .layout-calendar .fc .fc-toolbar > * > * {
+    float: none;
+  }
+}
+.calendar {
+  margin-bottom: 24px;
 }
 input.sharelink {
   width: 100%;

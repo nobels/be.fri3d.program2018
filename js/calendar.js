@@ -52,6 +52,7 @@ $(document).ready(function() {
         minTime: '10:00:00',
         maxTime: '23:00:00',
         locale: 'nl-be',
+        height: 'auto',
         groupByResource: true,
         buttonIcons: true, // show the prev/next text
         weekNumbers: false,
@@ -78,6 +79,24 @@ $(document).ready(function() {
                 url: '{{site.baseurl}}/track3.json', // use the `url` property
                 //color: 'green',    // an option!
                 className: 'track3',
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track4.json', // use the `url` property
+                //color: 'green',    // an option!
+                className: 'track4',
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track5.json', // use the `url` property
+                //color: 'green',    // an option!
+                className: 'track5',
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track6.json', // use the `url` property
+                //color: 'green',    // an option!
+                className: 'track6',
                 textColor: 'black' // an option!
             },
 

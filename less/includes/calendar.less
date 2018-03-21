@@ -10,17 +10,83 @@
     border-top: 4px solid @clr-tertiary5;
 }
 
-.fc-event.track1 {
+.track1base {
     background-color: @clr-primary7;
-    border-color: @clr-primary4;
+    background-image: url('../img/patterns/asfalt-dark.png');
+}
+
+.track2base {
+    background-color: @clr-secondary7;
+    background-image: url('../img/patterns/dark-circles.png');
+}
+
+.track3base {
+    background-color: @clr-tertiary7;
+    background-image: url('../img/patterns/dark-stripes.png');
+}
+
+.track4base {
+    background-color: @clr-primary7;
+    background-image: url('../img/patterns/black-thread.png');
+}
+
+.track5base {
+    background-color: @clr-secondary7;
+    background-image: url('../img/patterns/dark-leather.png');
+}
+
+.track6base {
+    background-color: @clr-tertiary7;
+    background-image: url('../img/patterns/arabesque.png');
+}
+
+.fc-event.track1 {
+    .track1base();
+    border-color: darken(@clr-primary6,10%);
 }
 .fc-event.track2 {
-    background-color: @clr-secondary7;
-    border-color: @clr-secondary3;
+    .track2base();
+    border-color: darken(@clr-secondary6,10%);
 }
 .fc-event.track3 {
-    background-color: @clr-tertiary6;
-    border-color: @clr-tertiary5;
+    .track3base();
+    border-color: darken(@clr-tertiary6,20%);
+}
+.fc-event.track4 {
+    .track4base();
+    border-color: darken(@clr-primary6,10%);
+}
+.fc-event.track5 {
+    .track5base();
+    border-color: darken(@clr-secondary6,10%);
+}
+.fc-event.track6 {
+    .track6base();
+    border-color: darken(@clr-tertiary6,20%);
+}
+
+.toggletrack[data-track="track1"].visible, .toggletrack[data-track="track1"]:hover {
+    .track1base();
+}
+
+.toggletrack[data-track="track2"].visible, .toggletrack[data-track="track2"]:hover {
+    .track2base();
+}
+
+.toggletrack[data-track="track3"].visible, .toggletrack[data-track="track3"]:hover {
+    .track3base();
+}
+
+.toggletrack[data-track="track4"].visible, .toggletrack[data-track="track4"]:hover {
+    .track4base();
+}
+
+.toggletrack[data-track="track5"].visible, .toggletrack[data-track="track5"]:hover {
+    .track5base();
+}
+
+.toggletrack[data-track="track6"].visible, .toggletrack[data-track="track6"]:hover {
+    .track6base();
 }
 
 .fc-event.calevent-selected {
@@ -35,4 +101,28 @@
 }
 .layout-calendar .contentcontrols button {
     white-space: nowrap;
+    color:@clr-gray2;
+    &.visible, &:hover {
+        color:@clr-primary8;
+    }
+    &.visible:hover {
+        color:@clr-gray2;
+        background-color: @clr-gray5;
+        background-image: none;
+    }
+}
+
+.layout-calendar .fc-toolbar .fc-right, .layout-calendar  .fc-toolbar .fc-left {
+    @media screen and (max-width:@breakpoint2) {
+        float:none;
+    }
+}
+.layout-calendar .fc .fc-toolbar > * > * {
+    @media screen and (max-width:@breakpoint2) {
+        float:none;
+    }
+}
+
+.calendar {
+    margin-bottom: (@margin*3);
 }
