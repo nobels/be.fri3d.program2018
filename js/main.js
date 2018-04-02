@@ -15,10 +15,10 @@ $(document).ready(function(){
 
     $(".tooltip").click(function(e){
         e.preventDefault();
-        if ( $(".tooltip-content").css('display') == 'none' ){
-            tooltipShow(this);
-        } else {
+        if ( $(this).hasClass('tooltip-on') ){
             tooltipHide(this);
+        } else {
+            tooltipShow(this);
         }
     });
 
@@ -47,8 +47,11 @@ $(document).ready(function(){
 
     function tooltipHide(target) {
         $(".tooltip-content").hide();
+        $(target).removeClass("tooltip-on");
     }
     function tooltipShow(target) {
+        $("a.tooltip").removeClass("tooltip-on");
+        $(target).addClass("tooltip-on");
         $(".tooltip-content").show();
         var mypos = $(target).position();
         var newleft = mypos.left-280;
@@ -56,7 +59,6 @@ $(document).ready(function(){
         if (newleft < 0) {
             newleft = 0;
         }
-        console.log(newleft);
         $(".tooltip-content p").text( $(target).data("content") );
         $(".tooltip-content").css('left', newleft);
         $(".tooltip-content").css('top', newtop);
