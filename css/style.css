@@ -1919,6 +1919,15 @@ a.button:hover {
   padding-left: 16px;
   border-left: 2px solid #AFAAA7;
 }
+.tooltip-content {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  border: 1px solid #B27A00;
+  background-color: #ffe8b5;
+  padding: 8px;
+  width: 250px;
+}
 .programma .search {
   padding: 8px;
 }

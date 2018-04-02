@@ -5,6 +5,23 @@ $(document).ready(function(){
     $( window ).resize(function() {
         toggleQuickNav("opened");
     });
+
+    $(".tooltip").hover(function(){
+        tooltipShow(this);
+    },
+    function(){
+        tooltipHide(this);
+    });
+
+    $(".tooltip").click(function(e){
+        e.preventDefault();
+        if ( $(".tooltip-content").css('display') == 'none' ){
+            tooltipShow(this);
+        } else {
+            tooltipHide(this);
+        }
+    });
+
     /**
     * changes open/closed status of menu on mobile
     * @param navstate optional, current state of nav, either 'opened' or 'closed'. Menu will be set to opposite of provided navstate.
@@ -26,6 +43,24 @@ $(document).ready(function(){
                 $(".quicknav").css("height",$(".quicknav .navitems").height());
                 $(".quicknav").addClass("quicknav-opened");
         }
+    }
+
+    function tooltipHide(target) {
+        $(".tooltip-content").hide();
+    }
+    function tooltipShow(target) {
+        $(".tooltip-content").show();
+        var mypos = $(target).position();
+        var newleft = mypos.left-280;
+        var newtop = mypos.top+30;
+        if (newleft < 0) {
+            newleft = 0;
+        }
+        console.log(newleft);
+        $(".tooltip-content p").text( $(target).data("content") );
+        $(".tooltip-content").css('left', newleft);
+        $(".tooltip-content").css('top', newtop);
+        //$(".tooltip-content").css($(target).position());
     }
 
 });
