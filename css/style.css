@@ -1928,6 +1928,13 @@ a.button:hover {
 .activity-footer .footerblock {
   margin-bottom: 24px;
 }
+.block-important {
+  background-color: #fff6e1;
+  padding: 16px;
+}
+.block-important h2 {
+  margin-top: 0;
+}
 .timeslots {
   list-style: none;
   padding: 0;
@@ -1938,8 +1945,10 @@ a.button:hover {
   padding: 0;
   margin: 0;
   margin-bottom: 16px;
-  padding-left: 16px;
-  border-left: 2px solid #AFAAA7;
+}
+.timeslots li > .material-icons {
+  font-size: 16px;
+  padding-bottom: 3px;
 }
 .tooltip .material-icons {
   font-size: 18px;
@@ -1953,9 +1962,17 @@ a.button:hover {
   padding: 8px;
   width: 250px;
 }
-.contentnode .main h2 {
+.contentnode .main > h2 {
   margin-top: 24px;
   margin-bottom: 16px;
+}
+.metalinks {
+  font-size: 12px;
+  margin-top: 8px;
+  border-top: 1px solid #AFAAA7;
+}
+.metalinks .material-icons {
+  font-size: 16px;
 }
 .programma .search {
   padding: 8px;

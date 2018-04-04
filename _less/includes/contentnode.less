@@ -119,6 +119,14 @@
     margin-bottom: @margin*3;
 }
 
+.block-important {
+    background-color:@clr-tertiary7;
+    padding:@margin*2;
+    h2 {
+        margin-top:0;
+    }
+}
+
 .timeslots {
     list-style: none;
     padding:0;
@@ -128,8 +136,13 @@
         padding: 0;
         margin: 0;
         margin-bottom: @margin*2;
-        padding-left: @margin*2;
-        border-left: 2px solid @clr-gray4;
+        //padding-left: @margin*2;
+        //border-left: 2px solid @clr-gray4;
+        
+    }
+    li > .material-icons {
+        font-size: @fntsize-1;
+        padding-bottom: 3px;
     }
 }
 .tooltip .material-icons {
@@ -145,7 +158,16 @@
     width:250px; 
 }
 
-.contentnode .main h2 {
+.contentnode .main > h2 {
     margin-top:@margin*3;
     margin-bottom:@margin*2;
+}
+
+.metalinks {
+    font-size: @fntsize-0;
+    margin-top:@margin;
+    border-top:1px solid @clr-gray4;
+}
+.metalinks .material-icons {
+    font-size: @fntsize-1;
 }

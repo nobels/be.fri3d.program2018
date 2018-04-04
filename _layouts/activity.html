@@ -3,19 +3,18 @@
 <article class="contentnode activity">
     <header>
         <h1>{{ page.title }}</h1>
-        <p><a href="#">Toevoegen aan 'Mijn Programma'</a></p>
     </header>
     <section class="main">
         {{ content }}
         <footer class="activity-footer">
             {% if page.depends_on %}
-            <div class="footerblock">
-                <h2>Opgelet</h2>
-                <p>Je moet ook deze activiteit{% if page.depends_on.size > 1 %}en{% endif %} volgen:</p>
+            <div class="footerblock block-important">
+                <h2>Afhankelijkheid</h2>
+                <p>Deze activiteit is afhankelijk van {% if page.depends_on.size == 1 %}een{% endif %} andere. Zorg er dus voor dat je ook deze activiteit{% if page.depends_on.size > 1 %}en{% endif %} volgt:</p>
                 <ul class="activities-list">
                     {% for item in site.activities %}
                         {% for dep in page.depends_on %}
-                            {% if item.name == dep %}                                
+                            {% if item.name == dep %}         
                                 {% include li-activity.html %}
                             {% endif %}
                         {% endfor %}
@@ -45,12 +44,13 @@
             <ol class="timeslots">
                 {% for slot in page.timeslots %}
                 <li>
-                    <time datetime="{{ slot.start }}">{{ slot.start | date: "%a %R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time><br />
+                        <i class="material-icons">access_time</i> <time datetime="{{ slot.start }}">{{ slot.start | date: "%a %R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time><br />
                     {% for item in site.locations %}
                         {% if item.name == slot.location %}
-                        <a href="{{site.baseurl}}/locations/{{ slot.location }}.html">{{ item.title }}</a>
+                        <i class="material-icons">place</i> <a href="{{site.baseurl}}/locations/{{ slot.location }}.html">{{ item.title }}</a>
                         {% endif %}
                     {% endfor %}
+                    <p class="metalinks"><a href="#"><i class="material-icons">add</i> Mijn Programma</a></p>
                 </li>
                 {% endfor %}
             </ol>
