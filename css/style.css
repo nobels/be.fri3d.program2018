@@ -1681,6 +1681,19 @@ a.button:hover {
   padding: 8px;
   font-weight: bold;
 }
+.activities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.activities-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  border-left: 2px solid #AFAAA7;
+}
 .pageheader .minilogo {
   height: 24px;
   margin-right: 16px;
@@ -1850,6 +1863,7 @@ a.button:hover {
   .contentnode .sidebar1 {
     grid-row: sidebar1 / span 1;
     grid-column: sidebar1 / span 1;
+    padding-right: 0;
   }
 }
 .contentnode .sidebar2 {
@@ -1867,6 +1881,7 @@ a.button:hover {
   .contentnode .sidebar2 {
     grid-row: sidebar2 / span 1;
     grid-column: sidebar2 / span 1;
+    padding-left: 0;
   }
 }
 .contentnode .sidebarfull {
@@ -1886,6 +1901,9 @@ a.button:hover {
     grid-column: sidebar1 / span 1;
   }
 }
+.contentnode.contributor .main {
+  padding-bottom: 24px;
+}
 .sideblock {
   margin-left: 16px;
   margin-bottom: 24px;
@@ -1897,6 +1915,10 @@ a.button:hover {
   }
 }
 .sideblock-map img {
+  width: 100%;
+  height: auto;
+}
+.sideblock-avatar img {
   width: 100%;
   height: auto;
 }
@@ -1919,6 +1941,9 @@ a.button:hover {
   padding-left: 16px;
   border-left: 2px solid #AFAAA7;
 }
+.tooltip .material-icons {
+  font-size: 18px;
+}
 .tooltip-content {
   display: none;
   position: absolute;
@@ -1927,6 +1952,10 @@ a.button:hover {
   background-color: #ffe8b5;
   padding: 8px;
   width: 250px;
+}
+.contentnode .main h2 {
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 .programma .search {
   padding: 8px;

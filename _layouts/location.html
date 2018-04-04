@@ -6,11 +6,15 @@
     </header>
     <section class="main">
         {{ content }}
+        <h2>Activiteiten</h2>
         <ul class="activities-list">
-        {% for item in site.data.programma %}
-            {% if item.location == page.name %}
-            <li><time datetime="{{ item.start }}">{{ item.start | date: "%a %R" }}</time> - <time datetime="{{ item.end }}">{{ item.end | date: "%R" }}</time> <a href="{{ site.baseurl }}/activity.html">{{ item.title }}</a></li>
-            {% endif %}
+        {% for item in site.activities %}
+        {{item.location}}
+            {% for slot in item.timeslots %}
+                {% if slot.location == page.name %}
+                {% include li-activity-slot.html %}
+                {% endif %}
+            {% endfor %}
         {% endfor %}
         </ul>
     </section>

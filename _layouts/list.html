@@ -30,32 +30,34 @@
         </tr>
     </thead>
     <tbody class="list">
-      {% for item in site.data.programma %}
-      <tr class="programma-row">
-          {% assign day = item.start | date: "%u" | minus: 1 %}
-          <td>
-              <h2><a href="activity.html" class="act-ttl">{{item.title}}</a></h2>
-              <p class="act-desc visuallyhidden">{{item.desc}}</p>
-              <p class="act-tags visuallyhidden">{{item.tags | join: ',' }}</p>
-          </td>
-          <td><span class="act-timestamp visuallyhidden">{{ item.start }}</span>
-              <time datetime="{{ item.start }}" class="act-time">{{ site.data.nl.days[day] }}, {{ item.start | date: "%R" }}</time> - <time datetime="{{ item.end }}">{{ item.end | date: "%R" }}</time>
-          </td>
-          <td>
-              {% for loc in site.locations %}
-                  {% if loc.name == item.location %}
-                  <a href="/locations/{{ item.location }}" class="act-location">{{ loc.title }}</a>
-                  {% endif %}
-              {% endfor %}
-          </td>
-          <td class="act-type">
-              {% for type in site.data.metadata.types %}
-                  {% if type.name == item.type %}
-                  {{ type.desc }}
-                  {% endif %}
-              {% endfor %}
-          </td>
-      </tr>
+      {% for item in site.activities %}
+        {% for slot in item.timeslots %}
+        <tr class="programma-row">
+            {% assign day = slot.start | date: "%u" | minus: 1 %}
+            <td>
+                <h2><a href="{{ item.url | prepend: site.baseurl }}" class="act-ttl">{{item.title}}</a></h2>
+                <p class="act-desc visuallyhidden">{{item.desc}}</p>
+                <p class="act-tags visuallyhidden">{{item.tags | join: ',' }}</p>
+            </td>
+            <td><span class="act-timestamp visuallyhidden">{{ slot.start }}</span>
+                <time datetime="{{ slot.start }}" class="act-time">{{ site.data.nl.days[day] }}, {{ slot.start | date: "%R" }}</time> - <time datetime="{{ item.end }}">{{ slot.end | date: "%R" }}</time>
+            </td>
+            <td>
+                {% for loc in site.locations %}
+                    {% if loc.name == slot.location %}
+                    <a href="/locations/{{ slot.location }}" class="act-location">{{ loc.title }}</a>
+                    {% endif %}
+                {% endfor %}
+            </td>
+            <td class="act-type">
+                {% for type in site.data.metadata.types %}
+                    {% if type.name == item.type %}
+                    {{ type.desc }}
+                    {% endif %}
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
       {% endfor %}
     </tbody>
   </table>

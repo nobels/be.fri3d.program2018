@@ -8,6 +8,21 @@
     <section class="main">
         {{ content }}
         <footer class="activity-footer">
+            {% if page.depends_on %}
+            <div class="footerblock">
+                <h2>Opgelet</h2>
+                <p>Je moet ook deze activiteit{% if page.depends_on.size > 1 %}en{% endif %} volgen:</p>
+                <ul class="activities-list">
+                    {% for item in site.activities %}
+                        {% for dep in page.depends_on %}
+                            {% if item.name == dep %}                                
+                                {% include li-activity.html %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
             <div class="footerblock">
                 <h2>Voor wie?</h2>
                 <p>{{ page.audience }} <a href="#" class="tooltip" data-content="Tenzij specifiek anders vermeld, is elke activiteit (ook) geschikt voor volwassenen"><i class="material-icons">info</i></a></p>
@@ -33,7 +48,7 @@
                     <time datetime="{{ slot.start }}">{{ slot.start | date: "%a %R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time><br />
                     {% for item in site.locations %}
                         {% if item.name == slot.location %}
-                        <a href="/locations/{{ slot.location }}.html">{{ item.title }}</a>
+                        <a href="{{site.baseurl}}/locations/{{ slot.location }}.html">{{ item.title }}</a>
                         {% endif %}
                     {% endfor %}
                 </li>
@@ -50,9 +65,10 @@
         </div>
         <div class="sideblock">
             <h2>Organisator</h2>
-            {% for item in site.data.people %}
-                {% if item.name == page.organisator %}
-                <p class="person"><a href="/people#{{item.name}}">{{item.desc}}</a></p>
+            {% for item in site.contributors %}
+                {%capture slugname %}{{ item.title | slugify }}{% endcapture %}
+                {% if slugname == page.organisator %}
+                <p class="person"><a href="{{site.baseurl}}/contributors/{{slugname}}">{{item.title}}</a></p>
                 {% endif %}
             {% endfor %}
         </div>
@@ -73,7 +89,13 @@
         </div>
         <div class="sideblock">
             <h2>Kostprijs</h2>
-            <p>{{ page.cost }}</p>
+            <p>
+                {% if page.cost %}
+                {{ page.cost }}
+                {% else %}
+                Geen extra kostprijs
+                {% endif %}
+            </p>
         </div>
     </section>
     <section class="admintools">

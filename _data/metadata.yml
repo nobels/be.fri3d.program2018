@@ -1,9 +1,9 @@
 durtypes:
     - name: inloop
-      desc: Dit is een inloopactiviteit
+      desc: Inloopactiviteit
       longdesc: Bij een inloopactiviteit hoef je niet van begin tot einde aanwezig te zijn, maar kan je doorlopend inpikken.
     - name: fulldur
-      desc: Volledige aanwezigheid gevraagd
+      desc: Volledige aanwezigheid
       longdesc: Je kan niet doorlopend aansluiten bij deze activiteit, je moet van de start tot het einde aanwezig zijn.
 types:
     - name: workshop

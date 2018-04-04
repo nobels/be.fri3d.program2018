@@ -4,6 +4,8 @@
 <ul class="navlist">
     {% if 'locations' == page.collection %}
         {% assign items = site.locations | sort: 'title' | where: "layout","location" %}
+    {% elsif 'contributors' == page.collection %}
+        {% assign items = site.contributors | sort: 'title' | where: "layout","contributor" %}
     {% endif %}
     {% for item in items %}
     <li><a href="{{ site.baseurl }}/{{page.collection}}/{{item.name}}.html">{{item.title}}</a></li>

@@ -1,0 +1,37 @@
+{% include header.html %}
+{% include pageheader.html %}
+<article class="contentnode contributor">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <section class="main">
+        {{ content }}        
+    </section>
+
+    <section class="sidebar1">
+        <div class="sideblock">
+                <h2>Activiteiten</h2>
+                <ul class="activities-list">
+                        {% for item in site.activities %}
+                            {%capture slugname %}{{ page.title | slugify }}{% endcapture %}            
+                            {% if item.organisator == slugname %}
+                            {% for slot in item.timeslots %}
+                                {% include li-activity-slot.html %}
+                            {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                </ul>
+        </div>
+    </section>
+    <section class="sidebar2">
+         <div class="sideblock sideblock-avatar">
+                <img src="{{ site.baseurl }}/img{{ page.id }}.jpg" />
+        </div>
+        {% if page.website %}
+        <div class="sideblock sideblock-link">
+            <p><a href="{{ page.website }}">{{ page.website }}</a></p>
+        </div>
+        {% endif %}
+    </section>
+</article>
+{% include footer.html %}

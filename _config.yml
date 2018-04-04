@@ -37,3 +37,7 @@ exclude:
 collections:
   locations:
     output: true
+  activities:
+    output: true
+  contributors:
+    output: true

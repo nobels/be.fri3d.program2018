@@ -4,7 +4,8 @@
         &gt; <a href="{{ site.baseurl }}/calendar.html">Programma</a>
         {% if 'location' == page.layout %}
         &gt; <a href="{{ site.baseurl }}/locations/">Locaties</a>
-        {% endif %} &gt; {{ page.title }}</nav>
+        {% elsif 'contributor' == page.layout %}
+        &gt; <a href="{{ site.baseurl }}/contributors/">Contributors</a> {% endif %} &gt; {{ page.title }}</nav>
 </header>
 <div class="pagewrapper">
     <div class="contentwrapper">
