@@ -4,7 +4,7 @@ var cleanCSS = require('gulp-clean-css');
 
 gulp.task('get_site_less', function() {
     gulp.src(['../fri3d2018-announce/less/*.less'])
-        .pipe(gulp.dest('less/from_mainsite'))
+        .pipe(gulp.dest('_less/from_mainsite'))
 });
 
 gulp.task('cssmin', function() {
@@ -15,7 +15,7 @@ gulp.task('cssmin', function() {
 });
 
 gulp.task('cssdev', function() {
-    gulp.src(['less/*.less'])
+    gulp.src(['_less/*.less'])
         .pipe(less())
         .pipe(gulp.dest('css'));
 });
@@ -26,5 +26,5 @@ gulp.task('default', ['dev','stream']);
 
 gulp.task('stream', function () {
     // Endless stream mode
-    gulp.watch(['less/*.less','less/includes/*.less'], ['dev']);
+    gulp.watch(['_less/*.less','_less/includes/*.less'], ['dev']);
 });
