@@ -31,7 +31,7 @@
                 <h2>Tags</h2>
                 <div class="taglist">
                     {% for tag in page.tags %}
-                    <a class="tag" href="{{site.baseurl}}/list.html#tag={{tag}}">{{tag}}</a>
+                    <a class="tag" href="{{site.baseurl}}/activities/#tag={{tag}}">{{tag}}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -97,17 +97,7 @@
                 {% endif %}
             </p>
         </div>
-    </section>
-    <section class="admintools">
-        <ul>
-            <li>
-                <a href="#">Bewerken</a>
-            </li>
-            <li>
-                <a href="#">Verbergen</a>
-            </li>
-        </ul>
-    </section>
+    </section>    
     <div class="tooltip-content"><p>tooltip content</p></div>
 </article>
 {% include footer.html %}

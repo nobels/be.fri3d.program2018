@@ -64,37 +64,37 @@ $(document).ready(function() {
 
             // your event source
             {
-                url: '{{site.baseurl}}/track1.json', // use the `url` property
+                url: '{{site.baseurl}}/track_hoofdgebouw.json', // use the `url` property
                 //color: 'yellow',    // an option!
                 className: 'track1',
                 textColor: 'black' // an option!
             },
             {
-                url: '{{site.baseurl}}/track2.json', // use the `url` property
+                url: '{{site.baseurl}}/track_speelveld.json', // use the `url` property
                 //color: 'green',    // an option!
                 className: 'track2',
                 textColor: 'black' // an option!
             },
             {
-                url: '{{site.baseurl}}/track3.json', // use the `url` property
+                url: '{{site.baseurl}}/track1.json', // use the `url` property
                 //color: 'green',    // an option!
                 className: 'track3',
                 textColor: 'black' // an option!
             },
             {
-                url: '{{site.baseurl}}/track4.json', // use the `url` property
+                url: '{{site.baseurl}}/track_dronefield.json', // use the `url` property
                 //color: 'green',    // an option!
                 className: 'track4',
                 textColor: 'black' // an option!
             },
             {
-                url: '{{site.baseurl}}/track5.json', // use the `url` property
+                url: '{{site.baseurl}}/track_knutselbaar.json', // use the `url` property
                 //color: 'green',    // an option!
                 className: 'track5',
                 textColor: 'black' // an option!
             },
             {
-                url: '{{site.baseurl}}/track6.json', // use the `url` property
+                url: '{{site.baseurl}}/track_shelter.json', // use the `url` property
                 //color: 'green',    // an option!
                 className: 'track6',
                 textColor: 'black' // an option!
@@ -114,8 +114,10 @@ $(document).ready(function() {
 
             $(".calendar-preview .desc").text(calEvent.desc);
             $(".calendar-preview h2").text(calEvent.title);
-            $(".calendar-preview .location").text(calEvent.location);
+            $(".calendar-preview .location a").text(calEvent.location);
+            $(".calendar-preview .location a").attr("href","{{site.baseurl}}/locations/"+calEvent.location);
             $(".calendar-preview .type").text(calEvent.type);
+            $(".calendar-preview .link").attr("href","{{site.baseurl}}/activities/"+calEvent.name);
             $(".popover-wrapper").show();
             $(".calendar-preview").show();
 

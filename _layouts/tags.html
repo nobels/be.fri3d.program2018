@@ -20,7 +20,7 @@
 <div class="alltags">
 {% for tag in tags %}
 <div class="tagblock" data-tag="{{tag}}">
-    <h2><a href="{{site.baseurl}}/list.html#tag={{tag}}">{{tag}}</a></h2>
+    <h2><a href="{{site.baseurl}}/activities/#tag={{tag}}">{{tag}}</a></h2>
     <ul class="activities-list">
     {% for item in site.activities %}
         {% if item.tags contains tag %}

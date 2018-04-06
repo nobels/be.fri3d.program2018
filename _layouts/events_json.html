@@ -1,0 +1,30 @@
+{%- assign items = site.activities | where: "layout", "activity" -%}
+{%- assign started = false -%}
+[
+{% for item in items %}
+{%- for slot in item.timeslots -%} 
+{%- if page.filter_loc == 'all' or slot.location == page.filter_loc -%} 
+{%- if started == true -%},{%- endif -%}
+{%- assign started = true -%}
+    {   
+        "name": "{{item.name}}",
+        "title": "{{item.title}}",
+        "location": "{{slot.location}}",
+        "start": "{{slot.start}}",
+        "end": "{{slot.end}}",
+        "organisator": "{{item.organisator}}",
+        "duration": {{item.duration}},
+        "durtype": "{{item.durtype}}",
+        "tags": [
+            "{{ item.tags|join: '","' }}"
+        ],
+        "audience": "{{item.audience}}",
+        "participants": "{{item.participants}}",
+        "type": "{{item.type}}",
+        "cost": "{{item.cost}}",
+        "desc": "{{ item.content | strip_newlines }}"
+    }
+{%- endif -%}
+{%- endfor -%}
+{%- endfor -%}
+]
