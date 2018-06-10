@@ -12,32 +12,62 @@
 
 .track1base {
     background-color: @clr-primary7;
-    background-image: url('../img/patterns/asfalt-dark.png');
+    background-image: url('../img/patterns/fri3d/circles.png');
+    background-size: 30px;
 }
 
 .track2base {
     background-color: @clr-secondary7;
-    background-image: url('../img/patterns/dark-circles.png');
+    background-image: url('../img/patterns/fri3d/horlines2.png');
+    background-size: 30px;
 }
 
 .track3base {
     background-color: @clr-tertiary7;
-    background-image: url('../img/patterns/dark-stripes.png');
+    background-image: url('../img/patterns/fri3d/pluses.png');
+    background-size: 30px;
 }
 
 .track4base {
     background-color: @clr-primary7;
-    background-image: url('../img/patterns/black-thread.png');
+    background-image: url('../img/patterns/fri3d/squares.png');
+    background-size: 30px;
 }
 
 .track5base {
     background-color: @clr-secondary7;
-    background-image: url('../img/patterns/dark-leather.png');
+    background-image: url('../img/patterns/fri3d/horlines3.png');
+    background-size: 30px;
 }
 
 .track6base {
     background-color: @clr-tertiary7;
-    background-image: url('../img/patterns/arabesque.png');
+    background-image: url('../img/patterns/fri3d/triangles1.png');
+    background-size: 30px;
+}
+
+.track7base {
+    background-color: @clr-primary7;
+    background-image: url('../img/patterns/fri3d/verlines2.png');
+    background-size: 30px;
+}
+
+.track8base {
+    background-color: @clr-secondary7;
+    background-image: url('../img/patterns/fri3d/xes.png');
+    background-size: 30px;
+}
+
+.track9base {
+    background-color: @clr-tertiary7;
+    background-image: url('../img/patterns/fri3d/verlines3.png');
+    background-size: 30px;
+}
+
+.track10base {
+    background-color: @clr-primary7;
+    background-image: url('../img/patterns/fri3d/triangles2.png');
+    background-size: 30px;
 }
 
 .fc-event.track1 {
@@ -64,6 +94,22 @@
     .track6base();
     border-color: darken(@clr-tertiary6,20%);
 }
+.fc-event.track7 {
+    .track7base();
+    border-color: darken(@clr-primary6,10%);
+}
+.fc-event.track8 {
+    .track8base();
+    border-color: darken(@clr-secondary6,10%);
+}
+.fc-event.track9 {
+    .track9base();
+    border-color: darken(@clr-tertiary6,20%);
+}
+.fc-event.track10 {
+    .track10base();
+    border-color: darken(@clr-primary6,10%);
+}
 
 .toggletrack[data-track="track1"].visible, .toggletrack[data-track="track1"]:hover {
     .track1base();
@@ -87,6 +133,22 @@
 
 .toggletrack[data-track="track6"].visible, .toggletrack[data-track="track6"]:hover {
     .track6base();
+}
+
+.toggletrack[data-track="track7"].visible, .toggletrack[data-track="track7"]:hover {
+    .track7base();
+}
+
+.toggletrack[data-track="track8"].visible, .toggletrack[data-track="track8"]:hover {
+    .track8base();
+}
+
+.toggletrack[data-track="track9"].visible, .toggletrack[data-track="track9"]:hover {
+    .track9base();
+}
+
+.toggletrack[data-track="track10"].visible, .toggletrack[data-track="track10"]:hover {
+    .track10base();
 }
 
 .fc-event.calevent-selected {
