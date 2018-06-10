@@ -64,39 +64,63 @@ $(document).ready(function() {
 
             // your event source
             {
-                url: '{{site.baseurl}}/track_hoofdgebouw.json', // use the `url` property
-                //color: 'yellow',    // an option!
-                className: 'track1',
-                textColor: 'black' // an option!
-            },
-            {
-                url: '{{site.baseurl}}/track_speelveld.json', // use the `url` property
-                //color: 'green',    // an option!
-                className: 'track2',
-                textColor: 'black' // an option!
-            },
-            {
                 url: '{{site.baseurl}}/track1.json', // use the `url` property
+                className: 'track1',
+                //color: 'yellow',    // an option!
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track2.json', // use the `url` property
+                className: 'track2',
                 //color: 'green',    // an option!
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track3.json', // use the `url` property
                 className: 'track3',
+                //color: 'green',    // an option!
                 textColor: 'black' // an option!
             },
             {
-                url: '{{site.baseurl}}/track_dronefield.json', // use the `url` property
-                //color: 'green',    // an option!
+                url: '{{site.baseurl}}/track4.json', // use the `url` property
                 className: 'track4',
+                //color: 'green',    // an option!
                 textColor: 'black' // an option!
             },
             {
-                url: '{{site.baseurl}}/track_knutselbaar.json', // use the `url` property
-                //color: 'green',    // an option!
+                url: '{{site.baseurl}}/track5.json', // use the `url` property
                 className: 'track5',
+                //color: 'green',    // an option!
                 textColor: 'black' // an option!
             },
             {
-                url: '{{site.baseurl}}/track_shelter.json', // use the `url` property
-                //color: 'green',    // an option!
+                url: '{{site.baseurl}}/track6.json', // use the `url` property
                 className: 'track6',
+                //color: 'green',    // an option!
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track7.json', // use the `url` property
+                className: 'track7',
+                //color: 'green',    // an option!
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track8.json', // use the `url` property
+                className: 'track8',
+                //color: 'green',    // an option!
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track9.json', // use the `url` property
+                className: 'track9',
+                //color: 'green',    // an option!
+                textColor: 'black' // an option!
+            },
+            {
+                url: '{{site.baseurl}}/track10.json', // use the `url` property
+                className: 'track10',
+                //color: 'green',    // an option!
                 textColor: 'black' // an option!
             },
 
