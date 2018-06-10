@@ -2067,87 +2067,173 @@ a.button:hover {
 }
 .track1base {
   background-color: #ddf0f4;
-  background-image: url('../img/patterns/asfalt-dark.png');
+  background-image: url('../img/patterns/fri3d/circles.png');
+  background-size: 30px;
 }
 .track2base {
   background-color: #ffe4e1;
-  background-image: url('../img/patterns/dark-circles.png');
+  background-image: url('../img/patterns/fri3d/horlines2.png');
+  background-size: 30px;
 }
 .track3base {
   background-color: #fff6e1;
-  background-image: url('../img/patterns/dark-stripes.png');
+  background-image: url('../img/patterns/fri3d/pluses.png');
+  background-size: 30px;
 }
 .track4base {
   background-color: #ddf0f4;
-  background-image: url('../img/patterns/black-thread.png');
+  background-image: url('../img/patterns/fri3d/squares.png');
+  background-size: 30px;
 }
 .track5base {
   background-color: #ffe4e1;
-  background-image: url('../img/patterns/dark-leather.png');
+  background-image: url('../img/patterns/fri3d/horlines3.png');
+  background-size: 30px;
 }
 .track6base {
   background-color: #fff6e1;
-  background-image: url('../img/patterns/arabesque.png');
+  background-image: url('../img/patterns/fri3d/triangles1.png');
+  background-size: 30px;
+}
+.track7base {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/fri3d/verlines2.png');
+  background-size: 30px;
+}
+.track8base {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/fri3d/xes.png');
+  background-size: 30px;
+}
+.track9base {
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/fri3d/verlines3.png');
+  background-size: 30px;
+}
+.track10base {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/fri3d/triangles2.png');
+  background-size: 30px;
 }
 .fc-event.track1 {
   background-color: #ddf0f4;
-  background-image: url('../img/patterns/asfalt-dark.png');
+  background-image: url('../img/patterns/fri3d/circles.png');
+  background-size: 30px;
   border-color: #84cad7;
 }
 .fc-event.track2 {
   background-color: #ffe4e1;
-  background-image: url('../img/patterns/dark-circles.png');
+  background-image: url('../img/patterns/fri3d/horlines2.png');
+  background-size: 30px;
   border-color: #ff8d82;
 }
 .fc-event.track3 {
   background-color: #fff6e1;
-  background-image: url('../img/patterns/dark-stripes.png');
+  background-image: url('../img/patterns/fri3d/pluses.png');
+  background-size: 30px;
   border-color: #ffc94f;
 }
 .fc-event.track4 {
   background-color: #ddf0f4;
-  background-image: url('../img/patterns/black-thread.png');
+  background-image: url('../img/patterns/fri3d/squares.png');
+  background-size: 30px;
   border-color: #84cad7;
 }
 .fc-event.track5 {
   background-color: #ffe4e1;
-  background-image: url('../img/patterns/dark-leather.png');
+  background-image: url('../img/patterns/fri3d/horlines3.png');
+  background-size: 30px;
   border-color: #ff8d82;
 }
 .fc-event.track6 {
   background-color: #fff6e1;
-  background-image: url('../img/patterns/arabesque.png');
+  background-image: url('../img/patterns/fri3d/triangles1.png');
+  background-size: 30px;
   border-color: #ffc94f;
+}
+.fc-event.track7 {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/fri3d/verlines2.png');
+  background-size: 30px;
+  border-color: #84cad7;
+}
+.fc-event.track8 {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/fri3d/xes.png');
+  background-size: 30px;
+  border-color: #ff8d82;
+}
+.fc-event.track9 {
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/fri3d/verlines3.png');
+  background-size: 30px;
+  border-color: #ffc94f;
+}
+.fc-event.track10 {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/fri3d/triangles2.png');
+  background-size: 30px;
+  border-color: #84cad7;
 }
 .toggletrack[data-track="track1"].visible,
 .toggletrack[data-track="track1"]:hover {
   background-color: #ddf0f4;
-  background-image: url('../img/patterns/asfalt-dark.png');
+  background-image: url('../img/patterns/fri3d/circles.png');
+  background-size: 30px;
 }
 .toggletrack[data-track="track2"].visible,
 .toggletrack[data-track="track2"]:hover {
   background-color: #ffe4e1;
-  background-image: url('../img/patterns/dark-circles.png');
+  background-image: url('../img/patterns/fri3d/horlines2.png');
+  background-size: 30px;
 }
 .toggletrack[data-track="track3"].visible,
 .toggletrack[data-track="track3"]:hover {
   background-color: #fff6e1;
-  background-image: url('../img/patterns/dark-stripes.png');
+  background-image: url('../img/patterns/fri3d/pluses.png');
+  background-size: 30px;
 }
 .toggletrack[data-track="track4"].visible,
 .toggletrack[data-track="track4"]:hover {
   background-color: #ddf0f4;
-  background-image: url('../img/patterns/black-thread.png');
+  background-image: url('../img/patterns/fri3d/squares.png');
+  background-size: 30px;
 }
 .toggletrack[data-track="track5"].visible,
 .toggletrack[data-track="track5"]:hover {
   background-color: #ffe4e1;
-  background-image: url('../img/patterns/dark-leather.png');
+  background-image: url('../img/patterns/fri3d/horlines3.png');
+  background-size: 30px;
 }
 .toggletrack[data-track="track6"].visible,
 .toggletrack[data-track="track6"]:hover {
   background-color: #fff6e1;
-  background-image: url('../img/patterns/arabesque.png');
+  background-image: url('../img/patterns/fri3d/triangles1.png');
+  background-size: 30px;
+}
+.toggletrack[data-track="track7"].visible,
+.toggletrack[data-track="track7"]:hover {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/fri3d/verlines2.png');
+  background-size: 30px;
+}
+.toggletrack[data-track="track8"].visible,
+.toggletrack[data-track="track8"]:hover {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/fri3d/xes.png');
+  background-size: 30px;
+}
+.toggletrack[data-track="track9"].visible,
+.toggletrack[data-track="track9"]:hover {
+  background-color: #fff6e1;
+  background-image: url('../img/patterns/fri3d/verlines3.png');
+  background-size: 30px;
+}
+.toggletrack[data-track="track10"].visible,
+.toggletrack[data-track="track10"]:hover {
+  background-color: #ddf0f4;
+  background-image: url('../img/patterns/fri3d/triangles2.png');
+  background-size: 30px;
 }
 .fc-event.calevent-selected {
   background-color: #FFB40F;
@@ -2188,20 +2274,16 @@ a.button:hover {
 .calendar {
   margin-bottom: 24px;
 }
-input.sharelink {
-  width: 100%;
-  box-sizing: border-box;
+.container-404 {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
 }
-.saved-popup {
-  background-color: white;
-  padding: 24px;
-  position: absolute;
-  grid-column: center / span 1;
-  grid-row: center / span 1;
-  z-index: 20;
-  display: none;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
-  border-top: 4px solid #0E96AF;
+.container-404 h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
 }
 @media print {
   .subhead,

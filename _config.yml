@@ -32,7 +32,8 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
-  - less/
+  - _less/
+  - _less/includes/
   - node_modules/
 collections:
   locations:
