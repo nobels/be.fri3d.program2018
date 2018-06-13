@@ -4,22 +4,17 @@
 
 <div class="contentcontrols">
     <span class="label">Toon tracks</span>
-    <button class="toggletrack visible" data-track="track1"><i class="material-icons">visibility</i> Berkenhof</button>
-    <button class="toggletrack visible" data-track="track2"><i class="material-icons">visibility</i> ConTent</button>
-    <button class="toggletrack visible" data-track="track3"><i class="material-icons">visibility</i> Drone Veld</button>
-    <button class="toggletrack visible" data-track="track4"><i class="material-icons">visibility</i> Hardware hacking tent</button>
-    <button class="toggletrack visible" data-track="track5"><i class="material-icons">visibility</i> Hoofdgebouw</button>
-    <button class="toggletrack visible" data-track="track6"><i class="material-icons">visibility</i> Hoofdgebouw zaal 2</button>
-    <button class="toggletrack visible" data-track="track7"><i class="material-icons">visibility</i> Knutselbaar</button>
-    <button class="toggletrack visible" data-track="track8"><i class="material-icons">visibility</i> Hoofdpodium</button>
-    <button class="toggletrack visible" data-track="track9"><i class="material-icons">visibility</i> Shelter</button>
-    <button class="toggletrack visible" data-track="track10"><i class="material-icons">visibility</i> Speelveld</button>
+    {% for loc in site.locations %}
+        {% if 'Locaties' != loc.title %}
+        <button class="toggletrack visible" data-track="{{loc.track}}"> {{loc.title}}</button>
+        {% endif %}
+    {% endfor %}
 </div>
 <div id="calendar" class="calendar"></div>
 
 <div class="popover-wrapper">
     <div class="calendar-preview"><h2></h2>
-        <p class="desc"></p>
+        <div class="desc"></div>
         <p class="meta"><strong>Locatie:</strong> <span class="location"><a href="#"></a></span></p> <p class="meta"><strong>Type:</strong> <span class="type"></span></p>
         <p><a class="link" href="#">Meer details</a></p>
     </div>

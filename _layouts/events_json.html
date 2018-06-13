@@ -8,7 +8,7 @@
 {%- assign started = true -%}
     {   
         "name": "{{item.name}}",
-        "title": "{{item.title}}",
+        "title": "{{item.title | escape}}",
         "location": "{{slot.location}}",
         "start": "{{slot.start}}",
         "end": "{{slot.end}}",
@@ -22,7 +22,7 @@
         "participants": "{{item.participants}}",
         "type": "{{item.type}}",
         "cost": "{{item.cost}}",
-        "desc": "{{ item.content | strip_newlines }}"
+        "desc": "{{ item.content | strip_newlines | escape }}"
     }
 {%- endif -%}
 {%- endfor -%}

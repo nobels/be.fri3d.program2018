@@ -123,6 +123,12 @@ $(document).ready(function() {
                 //color: 'green',    // an option!
                 textColor: 'black' // an option!
             },
+            {
+                url: '{{site.baseurl}}/track11.json', // use the `url` property
+                className: 'track11',
+                //color: 'green',    // an option!
+                textColor: 'black' // an option!
+            },
 
             // any other sources...
 
@@ -136,9 +142,9 @@ $(document).ready(function() {
 
         eventClick: function(calEvent, jsEvent, view) {
 
-            $(".calendar-preview .desc").text(calEvent.desc);
-            $(".calendar-preview h2").text(calEvent.title);
-            $(".calendar-preview .location a").text(calEvent.location);
+            $(".calendar-preview .desc").html( he.decode( calEvent.desc ) );
+            $(".calendar-preview h2").text( calEvent.title );
+            $(".calendar-preview .location a").text( calEvent.location );
             $(".calendar-preview .location a").attr("href","{{site.baseurl}}/locations/"+calEvent.location);
             $(".calendar-preview .type").text(calEvent.type);
             $(".calendar-preview .link").attr("href","{{site.baseurl}}/activities/"+calEvent.name);
@@ -158,6 +164,15 @@ $(document).ready(function() {
 
     $(".popover-wrapper").hide();
 
+/*
+    $(".toggletrack").hover(function(e) { 
+        if ( "visibility_off" != $(this).children(".material-icons").text() ) {
+            $(this).children(".material-icons").text("visibility_off");
+        } else {
+            $(this).children(".material-icons").text("visibility");
+        }
+    });
+*/
     $(".toggletrack").click(function(e) {
         e.preventDefault();
         var trackname = $(this).data('track');

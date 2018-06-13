@@ -2115,6 +2115,11 @@ a.button:hover {
   background-image: url('../img/patterns/fri3d/triangles2.png');
   background-size: 30px;
 }
+.track11base {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/fri3d/waves.png');
+  background-size: 30px;
+}
 .fc-event.track1 {
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/circles.png');
@@ -2174,6 +2179,12 @@ a.button:hover {
   background-image: url('../img/patterns/fri3d/triangles2.png');
   background-size: 30px;
   border-color: #84cad7;
+}
+.fc-event.track11 {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/fri3d/waves.png');
+  background-size: 30px;
+  border-color: #ff8d82;
 }
 .toggletrack[data-track="track1"].visible,
 .toggletrack[data-track="track1"]:hover {
@@ -2235,6 +2246,12 @@ a.button:hover {
   background-image: url('../img/patterns/fri3d/triangles2.png');
   background-size: 30px;
 }
+.toggletrack[data-track="track11"].visible,
+.toggletrack[data-track="track11"]:hover {
+  background-color: #ffe4e1;
+  background-image: url('../img/patterns/fri3d/waves.png');
+  background-size: 30px;
+}
 .fc-event.calevent-selected {
   background-color: #FFB40F;
   border-color: #B27A00;
@@ -2251,14 +2268,35 @@ a.button:hover {
   white-space: nowrap;
   color: #493F3A;
 }
-.layout-calendar .contentcontrols button.visible,
-.layout-calendar .contentcontrols button:hover {
+.layout-calendar .contentcontrols button::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: bottom;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  content: "\e8f5";
+}
+.layout-calendar .contentcontrols button.visible {
   color: #012e37;
 }
+.layout-calendar .contentcontrols button.visible::before {
+  content: "\e8f4 ";
+}
+.layout-calendar .contentcontrols button:hover::before {
+  content: "\e8f4 ";
+}
 .layout-calendar .contentcontrols button.visible:hover {
-  color: #493F3A;
-  background-color: #EDEDED;
-  background-image: none;
+  color: #655851;
+}
+.layout-calendar .contentcontrols button.visible:hover::before {
+  content: "\e8f5 ";
 }
 @media screen and (max-width: 550px) {
   .layout-calendar .fc-toolbar .fc-right,
