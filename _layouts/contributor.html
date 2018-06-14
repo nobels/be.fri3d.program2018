@@ -12,9 +12,8 @@
         <div class="sideblock">
                 <h2>Activiteiten</h2>
                 <ul class="activities-list">
-                        {% for item in site.activities %}
-                            {%capture slugname %}{{ page.title | slugify }}{% endcapture %}            
-                            {% if item.organisator == slugname %}
+                        {% for item in site.activities %}  
+                            {% if item.organisator == page.name %}
                             {% for slot in item.timeslots %}
                                 {% include li-activity-slot.html %}
                             {% endfor %}

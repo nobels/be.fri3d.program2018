@@ -5,24 +5,27 @@
         <h1>{{ page.title }}</h1>
     </header>
     <section class="main">
-        {{ content }}
-        <h2>Activiteiten</h2>
-        <ul class="activities-list">
-        {% for item in site.activities %}
-        {{item.location}}
-            {% for slot in item.timeslots %}
-                {% if slot.location == page.name %}
-                {% include li-activity-slot.html %}
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
-        </ul>
+        <div class="sideblock-map">
+            <img src="{{ site.baseurl }}/img{{ page.id }}.jpg" />
+        </div>
     </section>
     <section class="sidebarfull">
+        {% if content != empty %}
+        <div class="sideblock">
+            {{content}}
+        </div>
+        {% endif %}
         <div class="sideblock sideblock-map">
-        <a href="https://www.openstreetmap.org/#map={{ page.coords }}">
-            <img src="http://staticmap.openstreetmap.de/staticmap.php?center={{ page.coords }}&zoom=40&size=300x300&markers={{ page.coords }},red-pushpin" />
-        </a>
+            <h2>Activiteiten</h2>
+            <ul class="activities-list">
+            {% for item in site.activities %}            
+                {% for slot in item.timeslots %}
+                    {% if slot.location == page.name %}
+                    {% include li-activity-slot.html %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            </ul>
         </div>
     </section>
 </article>

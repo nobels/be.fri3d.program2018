@@ -97,3 +97,23 @@
         border-left: 2px solid @clr-gray4;
     }
 }
+
+.navlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 200px;
+    column-gap:@margin*3;
+    padding-bottom: @margin*4;
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-left:@margin;
+        margin-bottom: @margin;
+        border-left:1px solid @clr-gray4;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        //display: inline-block;
+    }
+}

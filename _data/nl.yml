@@ -7,10 +7,24 @@ days:
   - Zaterdag
   - Zondag
 days_abbr:
-  - Ma
-  - Di
-  - Wo
-  - Do
-  - Vr
-  - Za
-  - Zo
+  - 
+    en: Mon
+    nl: Ma
+  - 
+    en: Tue
+    nl: Di
+  - 
+    en: Wed
+    nl: Wo
+  - 
+    en: Thu
+    nl: Do
+  - 
+    en: Fri
+    nl: Vr
+  - 
+    en: Sat
+    nl: Za
+  - 
+    en: Sun
+    nl: Zo

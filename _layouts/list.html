@@ -45,7 +45,7 @@
             <td>
                 {% for loc in site.locations %}
                     {% if loc.name == slot.location %}
-                    <a href="/locations/{{ slot.location }}" class="act-location">{{ loc.title }}</a>
+                    <a href="{{site.baseurl}}/locations/{{ slot.location }}" class="act-location">{{ loc.title }}</a>
                     {% endif %}
                 {% endfor %}
             </td>

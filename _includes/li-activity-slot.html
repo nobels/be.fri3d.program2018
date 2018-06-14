@@ -1,1 +1,9 @@
-<li><time datetime="{{ slot.start }}">{{ slot.start | date: "%a %R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time> <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a></li>
+<li data-starttime="{{ slot.start }}">
+    {% assign dayname_en = slot.start | date: "%a" %}  
+    {% for dag in site.data.nl.days_abbr %}
+        {% if dayname_en == dag['en'] %}
+            {% assign dayname_nl = dag['nl'] %} 
+        {% endif %}
+    {% endfor %}       
+    <time datetime="{{ slot.start }}">{{ dayname_nl }} {{ slot.start | date: "%R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time> <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+</li>

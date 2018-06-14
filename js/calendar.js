@@ -49,7 +49,7 @@ $(document).ready(function() {
         allDaySlot: false,
         defaultDate: '2018-08-18',
         defaultView: 'agendaDay',
-        minTime: '10:00:00',
+        minTime: '09:00:00',
         maxTime: '23:00:00',
         locale: 'nl-be',
         height: 'auto',

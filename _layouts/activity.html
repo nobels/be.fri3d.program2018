@@ -21,12 +21,12 @@
                     {% endfor %}
                 </ul>
             </div>
-            {% endif %}
+            {% endif %}            
             <div class="footerblock">
                 <h2>Voor wie?</h2>
-                <p>{{ page.audience }} <a href="#" class="tooltip" data-content="Tenzij specifiek anders vermeld, is elke activiteit (ook) geschikt voor volwassenen"><i class="material-icons">info</i></a></p>
+                <p>{% if page.audience %}{{ page.audience }}<a href="#" class="tooltip" data-content="Tenzij specifiek anders vermeld, is elke activiteit (ook) geschikt voor volwassenen"><i class="material-icons">info</i></a>{% else %}Geschikt voor kinderen onder begeleiding en volwassenen.{% endif %}{{ page.audience }}</p>
             </div>
-            {% if page.tags %}
+            {% if page.tags != empty %}
             <div class="footerblock">
                 <h2>Tags</h2>
                 <div class="taglist">
@@ -65,9 +65,8 @@
         <div class="sideblock">
             <h2>Organisator</h2>
             {% for item in site.contributors %}
-                {%capture slugname %}{{ item.title | slugify }}{% endcapture %}
-                {% if slugname == page.organisator %}
-                <p class="person"><a href="{{site.baseurl}}/contributors/{{slugname}}">{{item.title}}</a></p>
+                {% if item.name == page.organisator %}
+                <p class="person"><a href="{{site.baseurl}}{{item.id}}">{{item.title}}</a></p>
                 {% endif %}
             {% endfor %}
         </div>
