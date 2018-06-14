@@ -2,11 +2,11 @@
 {%- assign started = false -%}
 [
 {% for item in items %}
-{%- for slot in item.timeslots -%} 
-{%- if page.filter_loc == 'all' or slot.location == page.filter_loc -%} 
+{%- for slot in item.timeslots -%}
+{%- if page.filter_loc == 'all' or slot.location == page.filter_loc -%}
 {%- if started == true -%},{%- endif -%}
 {%- assign started = true -%}
-    {   
+    {
         "name": "{{item.name}}",
         "title": "{{item.title | escape}}",
         "location": "{{slot.location}}",
@@ -22,6 +22,7 @@
         "participants": "{{item.participants}}",
         "type": "{{item.type}}",
         "cost": "{{item.cost}}",
+        "resourceId": "{{slot.location}}",
         "desc": "{{ item.content | strip_newlines | escape }}"
     }
 {%- endif -%}

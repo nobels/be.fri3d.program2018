@@ -12,12 +12,10 @@
 {% if 'calendar' == page.layout %}
 <script src='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/lib/moment.min.js'></script>
 <script src='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/fullcalendar.min.js'></script>
+<script src='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/scheduler.min.js'></script>
 <script src='{{ site.baseurl }}/vendor/fullcalendar-3.9.0/locale-all.js'></script>
 <script src='{{ site.baseurl }}/js/calendar.js'></script>
 {% endif %}
 {% if 'myprogram' == page.layout %}
 <script src='{{ site.baseurl }}/js/myprogram.js'></script>
-{% endif %}
-{% if 'location' == page.layout %}
-<script src='{{ site.baseurl }}/js/location.js'></script>
 {% endif %}
