@@ -1712,6 +1712,9 @@ a.button:hover {
   break-inside: avoid;
   page-break-inside: avoid;
 }
+.button-narrow {
+  max-width: 300px;
+}
 .pageheader .minilogo {
   height: 24px;
   margin-right: 16px;
@@ -1754,6 +1757,9 @@ a.button:hover {
   .sitettl {
     padding-bottom: 16px;
   }
+}
+.sitettl a {
+  color: white;
 }
 .quicknav {
   display: inline-block;
@@ -2330,6 +2336,60 @@ a.button:hover {
 }
 .calendar {
   margin-bottom: 24px;
+}
+.teaser-blocks,
+.teaser-blocks li {
+  list-style: none;
+}
+.teaser-blocks {
+  grid-gap: 24px;
+  padding: 0;
+  margin-bottom: 80px;
+  display: block;
+}
+.teaser-blocks .teaser-block {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 550px) {
+  .teaser-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .teaser-blocks .teaser-block {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .teaser-blocks {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teaser-blocks {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.teaser-block {
+  margin: 0;
+  box-sizing: border-box;
+}
+.teaser-block.unsorted .blocklink {
+  color: transparent;
+}
+.teaser-block.unsorted .blocklink h2 {
+  color: transparent;
+}
+.teaser-block .blocklink {
+  display: block;
+  background-color: #ddf0f4;
+  border-top: 2px solid #ddf0f4;
+  padding: 16px;
+  color: #000;
+  height: 100%;
+  box-sizing: border-box;
+}
+.teaser-block .blocklink:hover {
+  border-color: #FFC33E;
 }
 .container-404 {
   margin: 10px auto;

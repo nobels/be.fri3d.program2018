@@ -24,7 +24,7 @@
             {% endif %}            
             <div class="footerblock">
                 <h2>Voor wie?</h2>
-                <p>{% if page.audience %}{{ page.audience }}<a href="#" class="tooltip" data-content="Tenzij specifiek anders vermeld, is elke activiteit (ook) geschikt voor volwassenen"><i class="material-icons">info</i></a>{% else %}Geschikt voor kinderen onder begeleiding en volwassenen.{% endif %}{{ page.audience }}</p>
+                <p>{% if page.audience %}{{ page.audience }}<a href="#" class="tooltip" data-content="Tenzij specifiek anders vermeld, is elke activiteit (ook) geschikt voor volwassenen"><i class="material-icons">info</i></a>{% else %}Geschikt voor kinderen onder begeleiding en volwassenen.{% endif %}</p>
             </div>
             {% if page.tags != empty %}
             <div class="footerblock">
@@ -44,7 +44,14 @@
             <ol class="timeslots">
                 {% for slot in page.timeslots %}
                 <li>
-                        <i class="material-icons">access_time</i> <time datetime="{{ slot.start }}">{{ slot.start | date: "%a %R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time><br />
+                        <i class="material-icons">access_time</i> 
+                        {% assign dayname_en = slot.start | date: "%a" %}  
+                        {% for dag in site.data.nl.days_abbr %}
+                            {% if dayname_en == dag['en'] %}
+                                {% assign dayname_nl = dag['nl'] %}
+                            {% endif %}
+                        {% endfor %}
+                        <time datetime="{{ slot.start }}">{{ dayname_nl }} {{ slot.start | date: "%R" }}</time> - <time datetime="{{ slot.end }}">{{ slot.end | date: "%R" }}</time><br />
                     {% for item in site.locations %}
                         {% if item.name == slot.location %}
                         <i class="material-icons">place</i> <a href="{{site.baseurl}}/locations/{{ slot.location }}.html">{{ item.title }}</a>

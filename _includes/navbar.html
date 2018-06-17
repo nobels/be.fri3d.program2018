@@ -1,10 +1,12 @@
 <div class="navbar">
-    <span class="sitettl"><img class="minilogo" src="{{ site.baseurl }}/img/minibrand.svg" alt="Fri3d Camp"><span class="visuallyhidden">Fri3d Camp </span>Programma</span>
+    <span class="sitettl"><a href="{{ site.baseurl }}/"><img class="minilogo" src="{{ site.baseurl }}/img/minibrand.svg" alt="Fri3d Camp"><span class="visuallyhidden">Fri3d Camp </span>Programma</a></span>
     <nav class="quicknav">
         <div class="navitems">
-            <a href="{{ site.baseurl }}/" {%if 'calendar' == page.navitem %} class="selected"{% endif %}>Kalender</a>
+            <a href="{{ site.baseurl }}/" {%if 'home' == page.navitem %} class="selected"{% endif %}>Teasers</a>
+            <a href="{{ site.baseurl }}/calendar.html" {%if 'calendar' == page.navitem %} class="selected"{% endif %}>Kalender</a>
             <a href="{{ site.baseurl }}/activities/" {%if 'list' == page.navitem %} class="selected"{% endif %}>Lijst</a>
             <a href="{{ site.baseurl }}/contributors/" {%if 'contributors' == page.navitem %} class="selected"{% endif %}>Contributors</a>
+            <a href="{{ site.baseurl }}/locations/" {%if 'locations' == page.navitem %} class="selected"{% endif %}>Locaties</a>
         </div>
     </nav>
     <a href="#" class="navtoggle">

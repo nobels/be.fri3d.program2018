@@ -1,0 +1,24 @@
+{% include header.html %}
+{% include pageheader.html %}
+{{content}}
+<p>
+    <a href="#" class="button shuffle_blocks">Schud de blokjes</a>
+</p>
+<ul class="teaser-blocks">
+    {% assign activities = site.activities | where:'layout', 'activity' %}
+    {% for activity in activities %}
+    <li class="block teaser-block unsorted" data-durtime="{{ activity.duration }}">
+        <a class="blocklink" href="{{ site.baseurl }}{{ activity.id }}"> 
+            <h2>{{ activity.title }}</h2>
+            <p>
+                {% if activity.shortdesc %}
+                {{ activity.shortdesc }}
+                {% else %}
+                {{ activity.content | strip_html | truncate: 200 }}
+                {% endif %}
+            </p>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% include footer.html %}
