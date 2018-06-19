@@ -459,7 +459,25 @@ p {
 img.img-left {
   float: left;
   margin-right: 8px;
+}
+img.img-right {
+  float: right;
+  margin-left: 8px;
+}
+img.img-right,
+img.img-left {
   margin-bottom: 8px;
+}
+@media screen and (max-width: 550px) {
+  img.img-right,
+  img.img-left {
+    float: none;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
 }
 strong {
   font-weight: 600;
@@ -544,10 +562,12 @@ body.page {
   width: 100%;
   height: auto;
 }
+.maincontent figcaption,
 .widecontent figcaption {
   padding: 16px;
-  background-color: #AFAAA7;
+  background-color: #EDEDED;
 }
+.maincontent figcaption a,
 .widecontent figcaption a {
   color: #025C6D;
 }
@@ -586,6 +606,35 @@ body.page {
     display: inline-block;
   }
 }
+.subfooter {
+  padding: 24px;
+  background-color: white;
+}
+.subfooter .sponsors {
+  margin-top: 0;
+}
+.subfooter p {
+  text-align: center;
+}
+.subfooter .logolist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.subfooter .logolist li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.subfooter .logolist img {
+  height: 50px;
+  width: auto;
+}
 .pagehead {
   background-color: #012e37;
   background-image: url('../img/header_forest.jpg');
@@ -595,6 +644,11 @@ body.page {
   padding: 24px;
   z-index: 100;
   position: relative;
+}
+@media screen and (max-width: 400px) {
+  .pagehead {
+    padding: 8px;
+  }
 }
 .layout-redirecter .pagehead {
   padding: 8px;
@@ -623,7 +677,7 @@ body.page {
   }
 }
 .subhead {
-  background-color: #025C6D;
+  background-color: #012e37;
   font-family: 'Montserrat', sans-serif;
   font-size: 4.8rem;
   font-weight: 300;
@@ -778,39 +832,34 @@ body.page {
     height: 0;
   }
 }*/
-.menu-container .menu-container {
+.menu-container .submenu-container {
   position: absolute;
   top: -9999px;
 }
 @media screen and (min-width: 550px) {
-  .menu-container .menu-container {
-    width: 100%;
+  .menu-container .submenu-container {
+    max-width: 900px;
     left: 0;
   }
 }
-.menu-container .menu-container.active {
+.menu-container .submenu-container.active {
   top: auto;
 }
 @media screen and (max-width: 549px) {
-  .menu-container .menu-container.active {
+  .menu-container .submenu-container.active {
     position: relative;
     display: none;
   }
 }
-.menu-container .menu-container li {
+.menu-container .submenu-container li {
   display: block;
 }
-@media screen and (min-width: 550px) {
-  .menu-container .menu-container li {
-    display: inline-block;
-  }
-}
-.menu-container .menu-container li a {
+.menu-container .submenu-container li a {
   font-size: 16px;
   background-color: #ddf0f4;
   color: #000;
 }
-.menu-container .menu-container li a:hover {
+.menu-container .submenu-container li a:hover {
   background-color: #abdbe4;
 }
 .menu-container {
@@ -844,7 +893,7 @@ body.page {
   color: #000;
 }
 .menu-container li.active > a {
-  background-color: #abdbe4;
+  background-color: white;
   color: #025C6D;
 }
 .menu-container li.active > a:hover {
@@ -875,6 +924,45 @@ body.page {
     color: #000;
   }
 }
+.submenu-container {
+  background-color: #ddf0f4;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.submenu-container li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #56B6C8;
+}
+.submenu-container li a {
+  border-left: none;
+  border-right: none;
+  text-align: left;
+  display: block;
+}
+.submenu-container li a .label {
+  font-weight: bold;
+}
+.submenu-container li:last-of-type a {
+  border-right: none;
+}
+.submenu-container.selected > a,
+.submenu-container.active.selected > a {
+  background-color: #ddf0f4;
+  color: #000;
+}
+.submenu-container.active > a {
+  background-color: #abdbe4;
+  color: #025C6D;
+}
+.submenu-container.active > a:hover {
+  background-color: #ddf0f4;
+  color: #000;
+}
 .logo {
   position: relative;
   margin: 24px auto 80px;
@@ -895,6 +983,12 @@ body.page {
     margin-top: 8px;
     width: 200px;
     height: 54px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .logo {
+    margin-bottom: 16px;
+    margin-top: 8px;
   }
 }
 .logo img {
@@ -1093,8 +1187,8 @@ a.button:hover {
 }
 @media screen and (min-width: 400px) {
   .countdownwrapper {
-    margin-bottom: 160px;
-    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-top: 48px;
   }
 }
 .cdfooter {
@@ -1413,6 +1507,94 @@ a.button:hover {
   float: right;
   margin-right: 0;
 }
+@media screen and (max-width: 550px) {
+  .mapviewer {
+    display: none;
+  }
+}
+.map_on_mobile {
+  display: none;
+}
+@media screen and (max-width: 550px) {
+  .map_on_mobile {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+.mapcaption {
+  text-align: center;
+}
+.simpletable td {
+  vertical-align: top;
+  padding: 8px;
+}
+.simpletable td:first-of-type {
+  padding-left: 0;
+}
+.simpletable td:last-of-type {
+  padding-right: 0;
+}
+.simpletable tr {
+  border-top: 1px solid #56B6C8;
+}
+.simpletable p.subtext {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+h2.faqttl {
+  font-size: 20px;
+}
+.faqitem {
+  margin-bottom: 32px;
+  border-bottom: 1px solid #ddf0f4;
+  padding-bottom: 16px;
+}
+blockquote.citation {
+  margin-left: 0;
+  border-left: 4px solid #AFAAA7;
+  padding-left: 24px;
+}
+blockquote.citation .author {
+  display: block;
+  margin-top: 8px;
+  color: #7F7671;
+  font-style: italic;
+}
+.navblocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navblocks .navblock {
+  background-color: #012e37;
+  background-image: url('../img/header_forest.jpg');
+  min-height: 200px;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+.navblocks .navblock:first-of-type {
+  background-position: 300px -100px;
+}
+.navblocks .navblock:last-of-type {
+  background-position: 700px -100px;
+}
+.navblocks .navblock a {
+  color: white;
+  border-top: 4px solid #FFB40F;
+  padding: 16px;
+}
+.navblocks .navblock a:hover {
+  border-color: #FF260F;
+}
+.blocklink {
+  display: block;
+  height: 100%;
+}
 .imggrid {
   max-width: 300px;
   /*padding-left: @margin;
@@ -1486,6 +1668,23 @@ a.button:hover {
 }
 .sponsors .sponsorship {
   margin-top: 15px;
+}
+.sponsors .sponsor {
+  margin-bottom: 80px;
+}
+.sponsors.sponsors-financial {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sponsors.sponsors-financial .sponsor {
+  width: 50%;
+}
+.sponsors.sponsors-financial .info {
+  padding: 16px;
+  border: none;
+}
+.sponsors.sponsors-financial img {
+  max-height: 300px;
 }
 /* ==========================================================================
    Media Queries

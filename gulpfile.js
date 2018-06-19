@@ -3,7 +3,7 @@ var less = require('gulp-less');
 var cleanCSS = require('gulp-clean-css');
 
 gulp.task('get_site_less', function() {
-    gulp.src(['../fri3d2018-announce/less/*.less'])
+    gulp.src(['../fri3d2018-announce/_less/*.less'])
         .pipe(gulp.dest('_less/from_mainsite'))
 });
 

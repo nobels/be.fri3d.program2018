@@ -47,7 +47,23 @@ p {
 img.img-left {
     float: left;
     margin-right: @margin;
+}
+
+img.img-right {
+    float: right;
+    margin-left: @margin;
+}
+
+img.img-right,img.img-left {
     margin-bottom: @margin;
+    @media screen and ( max-width:@breakpoint2 ) {
+        float:none;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
 }
 
 strong {
@@ -136,9 +152,9 @@ strong {
   }
 }
 
-.widecontent figcaption {
+.maincontent figcaption, .widecontent figcaption {
   padding:(@margin*2);
-  background-color: @clr-gray4;
+  background-color: @clr-gray5;
   a {
       color:@clr-primary5;
   }
@@ -179,6 +195,37 @@ strong {
   }
 }
 
+.subfooter {
+    padding: (@margin*3);
+    background-color: white;
+    .sponsors {
+        margin-top: 0;
+    }
+    p {
+        text-align:center;
+    }
+}
+
+.subfooter .logolist {
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        list-style: none;
+        padding:0;
+        margin:0;
+        padding-right:(@margin*3);
+        padding-left:(@margin*3);
+    }
+    img {
+        height:50px;
+        width: auto;
+    }
+}
+
 .pagehead {
     background-color: @clr-primary8;
     background-image: url('../img/header_forest.jpg');
@@ -186,6 +233,9 @@ strong {
     background-position: center;
     background-repeat: no-repeat;
     padding: (@margin*3);
+    @media screen and (max-width:@breakpoint3) {
+        padding:@margin;
+    }
     z-index: 100;
     position: relative;
 }
@@ -215,7 +265,7 @@ strong {
 }
 
 .subhead {
-    background-color: @clr-primary5;
+    background-color: @clr-primary8;
     @media screen and (max-width:(@breakpoint2 - 1px)) {
       background-color: transparent;
     }
@@ -361,11 +411,11 @@ strong {
   }
 }*/
 
-.menu-container .menu-container {
+.menu-container .submenu-container {
     position: absolute;
     top:-9999px;
-    @media screen and (min-width:@breakpoint2) {
-        width: 100%;
+    @media screen and (min-width:@breakpoint2) {        
+        max-width: @rulelength-wide;
         left:0;
     }
     &.active {
@@ -376,10 +426,7 @@ strong {
         }
     }
     li {
-        display: block;
-        @media screen and (min-width:@breakpoint2) {
-            display:inline-block;
-        }
+        display: block;       
         a {
             font-size: @fntsize-1;
             background-color: @clr-primary7;
@@ -420,7 +467,7 @@ strong {
     }
 
     &.active > a {
-        background-color: @clr-primary6;
+        background-color: white;
         color:@clr-primary5;
         //color:white;
         &:hover {
@@ -452,6 +499,45 @@ strong {
   }
 }
 
+.submenu-container {
+    background-color: @clr-primary7;
+    width: 100%;
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: block;
+    li {
+        display:block;
+        padding:0;
+        margin: 0;
+        border-bottom: 1px solid @clr-primary2;
+        a{ 
+            border-left:none;
+            border-right:none;
+            text-align: left;
+            display:block;
+            .label {
+                font-weight: bold;
+            }
+        }
+    }
+    li:last-of-type a {
+        border-right:none;
+    }
+    &.selected > a, &.active.selected > a {
+        background-color: @clr-primary7;
+        color:@clr-black1;
+    }
+    &.active > a {
+        background-color: @clr-primary6;
+        color:@clr-primary5;
+        &:hover {
+            background-color: @clr-primary7;
+            color:@clr-black1;
+        }
+    }
+}
+
 .logo {
     position: relative;
     margin: @margin*3 auto @margin*10;
@@ -468,6 +554,10 @@ strong {
         margin-top: @margin;
         width: 200px;
         height: 54px;
+    }
+    @media screen and (max-width:@breakpoint3) {
+        margin-bottom: @margin*2;
+        margin-top: @margin;
     }
 }
 
@@ -671,8 +761,8 @@ strong {
       margin-bottom: (@margin*3);
       margin-top: (@margin*5);
       @media screen and (min-width: @breakpoint3) {
-          margin-bottom: (@margin*20);
-          margin-top: (@margin*10);
+          margin-bottom: (@margin*10);
+          margin-top: (@margin*6);
       }
 }
   .cdfooter {
@@ -880,4 +970,100 @@ strong {
 .linkblock-right {
     float: right;
     margin-right: 0;
+}
+
+.mapviewer {
+    @media screen and (max-width:@breakpoint2) {
+        display:none;
+    }
+}
+.map_on_mobile {
+    display:none;
+    @media screen and (max-width:@breakpoint2) {
+        display:block;
+        margin-bottom:@margin;
+        width:100%;
+    }
+}
+.mapcaption {
+    text-align: center;
+}
+
+.simpletable {
+    td {
+        vertical-align: top;
+        padding:@margin;
+        &:first-of-type {
+            padding-left:0;
+        }
+        &:last-of-type {
+            padding-right:0;
+        }
+    }
+    tr{
+        border-top:1px solid @clr-primary2;
+    }
+}
+
+.simpletable p.subtext {
+    font-size: @fntsize-0;
+    margin-bottom:0;
+}
+
+h2.faqttl {
+    font-size: @fntsize-2; 
+}
+
+.faqitem {
+    margin-bottom:(@margin*4);
+    border-bottom:1px solid @clr-primary7;
+    padding-bottom: (@margin*2);
+}
+
+blockquote.citation {
+    margin-left:0;
+    border-left:4px solid @clr-gray4;
+    padding-left:(@margin*3);
+    .author {
+        display:block;
+        margin-top:@margin;
+        color:@clr-gray3;
+        font-style: italic;
+    }
+}
+
+.navblocks {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: @margin*2;
+    list-style: none;
+    margin:0;
+    padding:0;
+    .navblock {
+        background-color:@clr-primary8;
+        background-image: url('../img/header_forest.jpg');
+        &:first-of-type {
+            background-position: 300px -100px;
+        }
+        &:last-of-type {
+            background-position: 700px -100px;
+        }
+        min-height:200px;
+        font-size: @fntsize-3;
+        font-weight:bold;
+        line-height:1.2em;
+        a {
+            color:white;
+            border-top:4px solid @clr-tertiary1;
+            padding:@margin*2;
+            &:hover {
+                border-color: @clr-secondary1;
+            }
+        }
+    }
+}
+
+.blocklink {
+    display:block;
+    height: 100%;
 }

@@ -3,3 +3,18 @@
         <a class="licenselink" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.nl"><img class="cclicense" alt="Creative Commons-Licentie" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
     </p>
 </footer>
+<footer class="subfooter">
+    <div class="sponsors">
+        <p>sponsors | <a href="http://www.fri3d.be/about/sponsors.html">Meer info</a></p>
+        <ul class="logolist">
+            {% for sponsor in site.data.sponsors %}
+                <li>{% if sponsor.link %}
+                        <a href="{{sponsor.link}}" target="_blank">
+                        {% endif %}<img src="{{ site.baseurl }}/sponsors/{{ sponsor.img }}" alt="{{ sponsor.name }}" />
+                    {% if sponsor.link %}
+                        </a>
+                {% endif %}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</footer>
