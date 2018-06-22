@@ -59,11 +59,21 @@ $(document).ready(function() {
         weekNumbers: false,
         navLinks: true, // can click day/week names to navigate views
         editable: false,
-        eventLimit: true, // allow "more" link when too many events
+        eventLimit: true, // allow "more" link when too many events,
+        eventRender: function(event, element) {
+            console.log( event );
+            element.addClass( 'track-' + event.resourceId );
+        },
         events: '{{site.baseurl}}/alltracks.json',
         resources: [
-            { id: 'main-stage', title: 'Main Stage' },
-            { id: 'content', title: 'Content' },
+            { 
+                id: 'main-stage', 
+                title: 'Main Stage'
+            },
+            { 
+                id: 'content', 
+                title: 'Content'
+            },
             { id: 'terrein', title: 'Terrein' },
             { id: 'berkenhof', title: 'Berkenhof' },
             { id: 'hardware-hacking-tent', title: 'Hardware Hacking Tent' },
