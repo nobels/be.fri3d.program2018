@@ -2290,191 +2290,253 @@ blockquote.citation .author {
   border-top: 4px solid #B27A00;
 }
 .track1base {
+  color: #000;
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/circles.png');
   background-size: 30px;
+  border-color: #84cad7;
+}
+.track1base:hover {
+  color: #000;
+  border-color: #abdbe4;
 }
 .track2base {
+  color: #000;
   background-color: #ffe4e1;
   background-image: url('../img/patterns/fri3d/horlines2.png');
   background-size: 30px;
+  border-color: #ff8d82;
+}
+.track2base:hover {
+  color: #000;
+  border-color: #ffbcb5;
 }
 .track3base {
+  color: #000;
   background-color: #fff6e1;
   background-image: url('../img/patterns/fri3d/pluses.png');
   background-size: 30px;
+  border-color: #ffc94f;
+}
+.track3base:hover {
+  color: #000;
+  border-color: #ffe8b5;
 }
 .track4base {
+  color: #000;
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/squares.png');
   background-size: 30px;
+  border-color: #84cad7;
+}
+.track4base:hover {
+  color: #000;
+  border-color: #abdbe4;
 }
 .track5base {
+  color: #000;
   background-color: #ffe4e1;
   background-image: url('../img/patterns/fri3d/horlines3.png');
   background-size: 30px;
+  border-color: #ff8d82;
+}
+.track5base:hover {
+  color: #000;
+  border-color: #ffbcb5;
 }
 .track6base {
+  color: #000;
   background-color: #fff6e1;
   background-image: url('../img/patterns/fri3d/triangles1.png');
   background-size: 30px;
+  border-color: #ffc94f;
+}
+.track6base:hover {
+  color: #000;
+  border-color: #ffe8b5;
 }
 .track7base {
+  color: #000;
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/verlines2.png');
   background-size: 30px;
+  border-color: #84cad7;
+}
+.track7base:hover {
+  color: #000;
+  border-color: #abdbe4;
 }
 .track8base {
+  color: #000;
   background-color: #ffe4e1;
   background-image: url('../img/patterns/fri3d/xes.png');
   background-size: 30px;
+  border-color: #ff8d82;
+}
+.track8base:hover {
+  color: #000;
+  border-color: #ffbcb5;
 }
 .track9base {
+  color: #000;
   background-color: #fff6e1;
   background-image: url('../img/patterns/fri3d/verlines3.png');
   background-size: 30px;
+  border-color: #ffc94f;
+}
+.track9base:hover {
+  color: #000;
+  border-color: #ffe8b5;
 }
 .track10base {
+  color: #000;
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/triangles2.png');
   background-size: 30px;
+  border-color: #84cad7;
+}
+.track10base:hover {
+  color: #000;
+  border-color: #abdbe4;
 }
 .track11base {
+  color: #000;
   background-color: #ffe4e1;
   background-image: url('../img/patterns/fri3d/waves.png');
   background-size: 30px;
+  border-color: #ff8d82;
 }
-.fc-event.track1 {
-  background-color: #ddf0f4;
-  background-image: url('../img/patterns/fri3d/circles.png');
-  background-size: 30px;
-  border-color: #84cad7;
+.track11base:hover {
+  color: #000;
+  border-color: #ffbcb5;
 }
-.fc-event.track2 {
+.fc table .fc-head th {
+  font-size: 12px;
+}
+.fc-event.fc-time-grid-event {
+  border-top: 4px solid;
+  border-radius: 0;
+}
+.fc-event.track-main-stage {
+  color: #000;
   background-color: #ffe4e1;
   background-image: url('../img/patterns/fri3d/horlines2.png');
   background-size: 30px;
   border-color: #ff8d82;
 }
-.fc-event.track3 {
-  background-color: #fff6e1;
-  background-image: url('../img/patterns/fri3d/pluses.png');
-  background-size: 30px;
-  border-color: #ffc94f;
+.fc-event.track-main-stage:hover {
+  color: #000;
+  border-color: #ffbcb5;
 }
-.fc-event.track4 {
-  background-color: #ddf0f4;
-  background-image: url('../img/patterns/fri3d/squares.png');
-  background-size: 30px;
-  border-color: #84cad7;
-}
-.fc-event.track5 {
-  background-color: #ffe4e1;
-  background-image: url('../img/patterns/fri3d/horlines3.png');
-  background-size: 30px;
-  border-color: #ff8d82;
-}
-.fc-event.track6 {
-  background-color: #fff6e1;
-  background-image: url('../img/patterns/fri3d/triangles1.png');
-  background-size: 30px;
-  border-color: #ffc94f;
-}
-.fc-event.track7 {
-  background-color: #ddf0f4;
-  background-image: url('../img/patterns/fri3d/verlines2.png');
-  background-size: 30px;
-  border-color: #84cad7;
-}
-.fc-event.track8 {
-  background-color: #ffe4e1;
-  background-image: url('../img/patterns/fri3d/xes.png');
-  background-size: 30px;
-  border-color: #ff8d82;
-}
-.fc-event.track9 {
-  background-color: #fff6e1;
-  background-image: url('../img/patterns/fri3d/verlines3.png');
-  background-size: 30px;
-  border-color: #ffc94f;
-}
-.fc-event.track10 {
-  background-color: #ddf0f4;
-  background-image: url('../img/patterns/fri3d/triangles2.png');
-  background-size: 30px;
-  border-color: #84cad7;
-}
-.fc-event.track11 {
-  background-color: #ffe4e1;
-  background-image: url('../img/patterns/fri3d/waves.png');
-  background-size: 30px;
-  border-color: #ff8d82;
-}
-.toggletrack[data-track="track1"].visible,
-.toggletrack[data-track="track1"]:hover {
+.fc-event.track-knutselbaar {
+  color: #000;
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/circles.png');
   background-size: 30px;
+  border-color: #84cad7;
 }
-.toggletrack[data-track="track2"].visible,
-.toggletrack[data-track="track2"]:hover {
-  background-color: #ffe4e1;
-  background-image: url('../img/patterns/fri3d/horlines2.png');
-  background-size: 30px;
+.fc-event.track-knutselbaar:hover {
+  color: #000;
+  border-color: #abdbe4;
 }
-.toggletrack[data-track="track3"].visible,
-.toggletrack[data-track="track3"]:hover {
+.fc-event.track-terrein {
+  color: #000;
   background-color: #fff6e1;
   background-image: url('../img/patterns/fri3d/pluses.png');
   background-size: 30px;
+  border-color: #ffc94f;
 }
-.toggletrack[data-track="track4"].visible,
-.toggletrack[data-track="track4"]:hover {
+.fc-event.track-terrein:hover {
+  color: #000;
+  border-color: #ffe8b5;
+}
+.fc-event.track-berkenhof {
+  color: #000;
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/squares.png');
   background-size: 30px;
+  border-color: #84cad7;
 }
-.toggletrack[data-track="track5"].visible,
-.toggletrack[data-track="track5"]:hover {
+.fc-event.track-berkenhof:hover {
+  color: #000;
+  border-color: #abdbe4;
+}
+.fc-event.track-hoofdgebouw-refter {
+  color: #000;
   background-color: #ffe4e1;
   background-image: url('../img/patterns/fri3d/horlines3.png');
   background-size: 30px;
+  border-color: #ff8d82;
 }
-.toggletrack[data-track="track6"].visible,
-.toggletrack[data-track="track6"]:hover {
+.fc-event.track-hoofdgebouw-refter:hover {
+  color: #000;
+  border-color: #ffbcb5;
+}
+.fc-event.track-hoofdgebouw-room-2 {
+  color: #000;
   background-color: #fff6e1;
   background-image: url('../img/patterns/fri3d/triangles1.png');
   background-size: 30px;
+  border-color: #ffc94f;
 }
-.toggletrack[data-track="track7"].visible,
-.toggletrack[data-track="track7"]:hover {
+.fc-event.track-hoofdgebouw-room-2:hover {
+  color: #000;
+  border-color: #ffe8b5;
+}
+.fc-event.track-hoofdgebouw-room-3 {
+  color: #000;
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/verlines2.png');
   background-size: 30px;
+  border-color: #84cad7;
 }
-.toggletrack[data-track="track8"].visible,
-.toggletrack[data-track="track8"]:hover {
+.fc-event.track-hoofdgebouw-room-3:hover {
+  color: #000;
+  border-color: #abdbe4;
+}
+.fc-event.track-hoofdgebouw-room-4 {
+  color: #000;
   background-color: #ffe4e1;
   background-image: url('../img/patterns/fri3d/xes.png');
   background-size: 30px;
+  border-color: #ff8d82;
 }
-.toggletrack[data-track="track9"].visible,
-.toggletrack[data-track="track9"]:hover {
+.fc-event.track-hoofdgebouw-room-4:hover {
+  color: #000;
+  border-color: #ffbcb5;
+}
+.fc-event.track-shelter {
+  color: #000;
   background-color: #fff6e1;
   background-image: url('../img/patterns/fri3d/verlines3.png');
   background-size: 30px;
+  border-color: #ffc94f;
 }
-.toggletrack[data-track="track10"].visible,
-.toggletrack[data-track="track10"]:hover {
+.fc-event.track-shelter:hover {
+  color: #000;
+  border-color: #ffe8b5;
+}
+.fc-event.track-content {
+  color: #000;
   background-color: #ddf0f4;
   background-image: url('../img/patterns/fri3d/triangles2.png');
   background-size: 30px;
+  border-color: #84cad7;
 }
-.toggletrack[data-track="track11"].visible,
-.toggletrack[data-track="track11"]:hover {
+.fc-event.track-content:hover {
+  color: #000;
+  border-color: #abdbe4;
+}
+.fc-event.track-hardware-hacking-tent {
+  color: #000;
   background-color: #ffe4e1;
   background-image: url('../img/patterns/fri3d/waves.png');
   background-size: 30px;
+  border-color: #ff8d82;
+}
+.fc-event.track-hardware-hacking-tent:hover {
+  color: #000;
+  border-color: #ffbcb5;
 }
 .fc-event.calevent-selected {
   background-color: #FFB40F;

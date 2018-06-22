@@ -1,9 +1,9 @@
-# fri3d programma templates
-Statische templates voor het Fri3d Camp 2018 programma
+# fri3d programma
+Fri3d Camp 2018 programma
 
 ## Howto
 
-De templates worden gegenereerd met Jekyll. Bundler is nodig om de site
+De site wordt gegenereerd met Jekyll. Bundler is nodig om de site
 te genereren.
 
 ### MacOS
@@ -74,3 +74,19 @@ Wil je `gulp dev` runnen telkens een .less file verandert, dan doe je
 ```bash
 $ gulp stream
 ```
+
+##GPL License
+Fri3d Camp program content
+    Copyright (C) 2018 Fri3d Camp
+
+    This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+    
+    www.fri3d.be - info@fri3d.be

@@ -11,157 +11,177 @@
 }
 
 .track1base {
+    color:@clr-black1;
     background-color: @clr-primary7;
     background-image: url('../img/patterns/fri3d/circles.png');
     background-size: 30px;
+    border-color: darken(@clr-primary6,10%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-primary6;
+    }
 }
 
 .track2base {
+    color:@clr-black1;
     background-color: @clr-secondary7;
     background-image: url('../img/patterns/fri3d/horlines2.png');
     background-size: 30px;
+    border-color: darken(@clr-secondary6,10%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-secondary6;
+    }
 }
 
 .track3base {
+    color:@clr-black1;
     background-color: @clr-tertiary7;
     background-image: url('../img/patterns/fri3d/pluses.png');
     background-size: 30px;
+    border-color: darken(@clr-tertiary6,20%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-tertiary6;
+    }
 }
 
 .track4base {
+    color:@clr-black1;
     background-color: @clr-primary7;
     background-image: url('../img/patterns/fri3d/squares.png');
     background-size: 30px;
+    border-color: darken(@clr-primary6,10%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-primary6;
+    }
 }
 
 .track5base {
+    color:@clr-black1;
     background-color: @clr-secondary7;
     background-image: url('../img/patterns/fri3d/horlines3.png');
     background-size: 30px;
+    border-color: darken(@clr-secondary6,10%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-secondary6;
+    }
 }
 
 .track6base {
+    color:@clr-black1;
     background-color: @clr-tertiary7;
     background-image: url('../img/patterns/fri3d/triangles1.png');
     background-size: 30px;
+    border-color: darken(@clr-tertiary6,20%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-tertiary6;
+    }
 }
 
 .track7base {
+    color:@clr-black1;
     background-color: @clr-primary7;
     background-image: url('../img/patterns/fri3d/verlines2.png');
     background-size: 30px;
+    border-color: darken(@clr-primary6,10%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-primary6;
+    }
 }
 
 .track8base {
+    color:@clr-black1;
     background-color: @clr-secondary7;
     background-image: url('../img/patterns/fri3d/xes.png');
     background-size: 30px;
+    border-color: darken(@clr-secondary6,10%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-secondary6;
+    }
 }
 
 .track9base {
+    color:@clr-black1;
     background-color: @clr-tertiary7;
     background-image: url('../img/patterns/fri3d/verlines3.png');
     background-size: 30px;
+    border-color: darken(@clr-tertiary6,20%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-tertiary6;
+    }
 }
 
 .track10base {
+    color:@clr-black1;
     background-color: @clr-primary7;
     background-image: url('../img/patterns/fri3d/triangles2.png');
     background-size: 30px;
+    border-color: darken(@clr-primary6,10%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-primary6;
+    }
 }
 
 .track11base {
+    color:@clr-black1;
     background-color: @clr-secondary7;
     background-image: url('../img/patterns/fri3d/waves.png');
     background-size: 30px;
+    border-color: darken(@clr-secondary6,10%);
+    &:hover {
+        color:@clr-black1;
+        border-color:@clr-secondary6;
+    }
 }
 
-.fc-event.track1 {
-    .track1base();
-    border-color: darken(@clr-primary6,10%);
-}
-.fc-event.track2 {
-    .track2base();
-    border-color: darken(@clr-secondary6,10%);
-}
-.fc-event.track3 {
-    .track3base();
-    border-color: darken(@clr-tertiary6,20%);
-}
-.fc-event.track4 {
-    .track4base();
-    border-color: darken(@clr-primary6,10%);
-}
-.fc-event.track5 {
-    .track5base();
-    border-color: darken(@clr-secondary6,10%);
-}
-.fc-event.track6 {
-    .track6base();
-    border-color: darken(@clr-tertiary6,20%);
-}
-.fc-event.track7 {
-    .track7base();
-    border-color: darken(@clr-primary6,10%);
-}
-.fc-event.track8 {
-    .track8base();
-    border-color: darken(@clr-secondary6,10%);
-}
-.fc-event.track9 {
-    .track9base();
-    border-color: darken(@clr-tertiary6,20%);
-}
-.fc-event.track10 {
-    .track10base();
-    border-color: darken(@clr-primary6,10%);
-}
-.fc-event.track11 {
-    .track11base();
-    border-color: darken(@clr-secondary6,10%);
+.fc table .fc-head th {
+    font-size: @fntsize-0;
 }
 
-.toggletrack[data-track="track1"].visible, .toggletrack[data-track="track1"]:hover {
-    .track1base();
+.fc-event.fc-time-grid-event {
+    border-top:4px solid;
+    border-radius: 0;
 }
 
-.toggletrack[data-track="track2"].visible, .toggletrack[data-track="track2"]:hover {
+.fc-event.track-main-stage {
     .track2base();
 }
-
-.toggletrack[data-track="track3"].visible, .toggletrack[data-track="track3"]:hover {
+.fc-event.track-knutselbaar {
+    .track1base();
+}
+.fc-event.track-terrein {
     .track3base();
 }
-
-.toggletrack[data-track="track4"].visible, .toggletrack[data-track="track4"]:hover {
+.fc-event.track-berkenhof {
     .track4base();
 }
-
-.toggletrack[data-track="track5"].visible, .toggletrack[data-track="track5"]:hover {
+.fc-event.track-hoofdgebouw-refter {
     .track5base();
 }
-
-.toggletrack[data-track="track6"].visible, .toggletrack[data-track="track6"]:hover {
+.fc-event.track-hoofdgebouw-room-2 {
     .track6base();
 }
-
-.toggletrack[data-track="track7"].visible, .toggletrack[data-track="track7"]:hover {
+.fc-event.track-hoofdgebouw-room-3 {
     .track7base();
 }
-
-.toggletrack[data-track="track8"].visible, .toggletrack[data-track="track8"]:hover {
+.fc-event.track-hoofdgebouw-room-4 {
     .track8base();
 }
-
-.toggletrack[data-track="track9"].visible, .toggletrack[data-track="track9"]:hover {
+.fc-event.track-shelter {
     .track9base();
 }
-
-.toggletrack[data-track="track10"].visible, .toggletrack[data-track="track10"]:hover {
+.fc-event.track-content {
     .track10base();
 }
-
-.toggletrack[data-track="track11"].visible, .toggletrack[data-track="track11"]:hover {
+.fc-event.track-hardware-hacking-tent {
     .track11base();
 }
 
