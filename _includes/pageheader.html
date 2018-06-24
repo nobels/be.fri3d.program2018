@@ -1,12 +1,18 @@
 <header class="pageheader">
+    <div class="headerbranding">
+        <div class="leftsec"><a href="http://www.fri3d.be/">← Keer terug naar de hoofdsite</a></div>
+        <div class="midsec"><span class="sitettl"><img class="minilogo" src="{{ site.baseurl }}/img/minibrand.svg" alt="">Fri3d Camp</div>
+        <div class="rightsec"></div>        
+    </div>
     {% include navbar.html %}
-    <nav class="breadcrumb"><i class="material-icons">home</i> <a href="http://www.fri3d.be/">Fri3d Camp 2018</a>
-        &gt; <a href="{{ site.baseurl }}/">Programma</a>
+    {% if 'home' != page.navitem %}
+    <nav class="breadcrumb"><i class="material-icons">home</i> <a href="{{ site.baseurl }}/">program.fri3d.be</a>
         {% if 'location' == page.layout %}
         &gt; <a href="{{ site.baseurl }}/locations/">Locaties</a>
         {% elsif 'contributor' == page.layout %}
         &gt; <a href="{{ site.baseurl }}/contributors/">Contributors</a> {% endif %}
         {% if 'blocks' != page.layout %} &gt; {{ page.title }}{% endif %}</nav>
+    {% endif %}
 </header>
 <div class="pagewrapper">
     <div class="contentwrapper">

@@ -1914,14 +1914,42 @@ blockquote.citation .author {
 .button-narrow {
   max-width: 300px;
 }
+#cta-tickets .herottl {
+  background-color: #012e37;
+  background-image: url('../img/header_forest.jpg');
+  margin-bottom: 8px;
+}
 .pageheader .minilogo {
   height: 24px;
   margin-right: 16px;
+}
+.headerbranding {
+  background-color: #012e37;
+  color: white;
+  padding: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.headerbranding a {
+  color: white;
+}
+.headerbranding .midsec {
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.headerbranding .midsec,
+.headerbranding .leftsec,
+.headerbranding .rightsec {
+  flex: 1;
 }
 .pageheader .navbar {
   padding-left: 24px;
   color: white;
   background-color: #012e37;
+  background-image: url('../img/header_forest.jpg');
 }
 @media screen and (max-width: 550px) {
   .pageheader .navbar {
@@ -1965,6 +1993,7 @@ blockquote.citation .author {
   padding-left: 24px;
 }
 .quicknav a {
+  font-family: Montserrat, sans-serif;
   padding-top: 16px;
   padding-bottom: 16px;
   display: inline-block;
