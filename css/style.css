@@ -1784,6 +1784,12 @@ blockquote.citation .author {
 .pagewrapper {
   padding: 0 24px;
 }
+.contentwrapper {
+  padding-top: 2rem;
+}
+.breadcrumb + .contentwrapper {
+  padding-top: 0;
+}
 .breadcrumb {
   max-width: 100%;
   padding-left: 24px;
@@ -1932,6 +1938,11 @@ blockquote.citation .author {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 550px) {
+  .headerbranding {
+    display: block;
+  }
+}
 .headerbranding a {
   color: white;
 }
@@ -1940,13 +1951,19 @@ blockquote.citation .author {
   padding-left: 8px;
   padding-right: 8px;
 }
+@media screen and (max-width: 550px) {
+  .headerbranding .leftsec {
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+}
 .headerbranding .midsec,
 .headerbranding .leftsec,
 .headerbranding .rightsec {
   flex: 1;
 }
 .pageheader .navbar {
-  padding-left: 24px;
   color: white;
   background-color: #012e37;
   background-image: url('../img/header_forest.jpg');
@@ -1958,6 +1975,7 @@ blockquote.citation .author {
 }
 .navtoggle {
   padding: 16px;
+  padding-top: 8px;
   display: none;
 }
 @media screen and (max-width: 400px) {
@@ -1989,30 +2007,31 @@ blockquote.citation .author {
   color: white;
 }
 .quicknav {
-  display: inline-block;
-  padding-left: 24px;
+  padding-top: 16px;
+  text-align: center;
 }
 .quicknav a {
   font-family: Montserrat, sans-serif;
-  padding-top: 16px;
+  padding-top: 8px;
+  margin-top: 8px;
   padding-bottom: 16px;
   display: inline-block;
   box-sizing: border-box;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
   transition: color 0.2s;
+  background-color: #03778C;
+  color: white;
+  transition: background-color 0.5s;
 }
 .quicknav a:hover {
-  color: white;
+  background-color: #30A3B8;
 }
 .quicknav a.selected {
-  color: white;
-}
-@media screen and (min-width: 551px) {
-  .quicknav a.selected {
-    padding-bottom: 11px;
-    border-bottom: solid 5px white;
-  }
+  background-color: white;
+  color: #012e37;
 }
 @media screen and (max-width: 550px) {
   .quicknav {
