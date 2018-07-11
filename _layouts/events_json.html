@@ -9,9 +9,12 @@
     {
         "name": "{{item.name}}",
         "title": "{{item.title | escape}}",
-        "location": "{{slot.location}}",
+        "location": "{{slot.location}}",{% if item.allday == true %}
+        "allDay": true, 
+        "start": "{{slot.start | date: "%Y-%m-%d"}}",
+        "end": "{{slot.end | date: "%Y-%m-%d"}}",{% else %}
         "start": "{{slot.start}}",
-        "end": "{{slot.end}}",
+        "end": "{{slot.end}}",{% endif %}
         "organisator": "{{item.organisator}}",
         "duration": {{item.duration}},
         "durtype": "{{item.durtype}}",

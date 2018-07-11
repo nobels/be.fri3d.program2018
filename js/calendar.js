@@ -47,7 +47,7 @@ $(document).ready(function() {
             center: 'title',
             right: 'agendaDay listDay'
         },
-        allDaySlot: false,
+        allDaySlot: true,
         defaultDate: '2018-08-18',
         defaultView: 'agendaDay',
         minTime: '10:00:00',
