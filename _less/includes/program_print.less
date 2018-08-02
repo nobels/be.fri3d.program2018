@@ -1,0 +1,62 @@
+@media print {
+    .headerbranding, .pageheader .navbar, .subfooter {
+        display:none;
+    }
+    .breadcrumb {
+        max-width:100%;
+        padding-bottom:@margin;
+        padding-top:0;
+        .material-icons {
+            margin-bottom: 0;
+        }
+    }
+    .contentwrapper {
+        padding-top:0;
+    }
+    .pagefooter p {
+        display:none;
+    }
+
+    .pagefooter::before {
+        content: url("https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png");
+    }
+
+    .contentnode a[href^="#"].tooltip {
+        display:block;
+        font-size: @fntsize-0;
+        font-style: italic;
+        margin-top: @margin;
+        text-decoration: none;
+        &:after {
+            content: attr(data-content);
+        }
+    }
+
+    .contentnode {
+        grid-template-columns: [main sidebar1] auto [sidebar2] auto [end];
+        grid-template-rows: [begin] auto [main] auto [sidebar1 sidebar2] auto [end];
+        margin-bottom: 0;
+    }
+
+    .contentnode .main {
+        grid-column: main / end;
+    }
+
+    .contentnode .sidebar1 {
+        grid-row: sidebar1 / span 1;
+        grid-column: sidebar1 / span 1;
+        padding-right: 0;
+        .sideblock {
+            margin-left: 0;
+        }
+    }
+    .contentnode .sidebar2 {
+        grid-row: sidebar2 / span 1;
+        grid-column: sidebar2 / span 1;
+        padding-left: 0;
+    }
+    .contentnode .sidebarfull { 
+        grid-row: sidebars / span 1;
+        grid-column: sidebar1 / span 1;
+    }
+}
