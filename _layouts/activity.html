@@ -72,7 +72,7 @@
         <div class="sideblock">
             <h2>Organisator</h2>
             {% for item in site.contributors %}
-                {% if item.name == page.organisator %}
+                {% if item.name == page.organisator and item.layout != 'navpage' %}
                 <p class="person"><a href="{{site.baseurl}}{{item.id}}">{{item.title}}</a></p>
                 {% endif %}
             {% endfor %}
